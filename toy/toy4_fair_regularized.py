@@ -15,6 +15,7 @@ from toy4_control import data, features, mmd
 K = 8
 BETA, SIGMA = 10.0, 0.5
 REG = {"dev": 0.08, "curvature": 0.04, "velocity": 0.04}
+MAC_KEEP = 0.70
 
 
 def sample_path(nodes, t):
@@ -71,6 +72,19 @@ def regs_for_line(nodes, a, b):
     return regularizers(nodes, a, b)
 
 
+def fit_velocity(phi, target, mac=False):
+    """Two-stage MAC-style fit: prefit, keep low-error couplings, refit."""
+    ridge = 0.1 * np.eye(phi.shape[1])
+    coef = np.linalg.solve(phi.T @ phi + ridge, phi.T @ target)
+    if not mac:
+        return coef, 1.0
+    residual = np.mean((phi @ coef - target) ** 2, axis=1)
+    keep = max(1, int(len(residual) * MAC_KEEP))
+    indices = np.argsort(residual)[:keep]
+    coef = np.linalg.solve(phi[indices].T @ phi[indices] + ridge, phi[indices].T @ target[indices])
+    return coef, float(keep / len(residual))
+
+
 def make_paths(a, b, method):
     lambdas = {"dev": 0.0, "curvature": 0.0, "velocity": 0.0} if method == "straight" else (REG if method == "pg_regularized" else {"dev": 0.0, "curvature": 0.0, "velocity": 0.0})
     rows = [solve_path(x, y, lambdas, optimize=(method != "straight")) for x, y in zip(a, b)]
@@ -85,15 +99,17 @@ def run(seed):
     w = rng.normal(size=(3, 128)); phase = rng.uniform(0, 2 * np.pi, 128)
     source, target = data(rng, 500)
     results = []
-    for method in ("straight", "pg", "pg_regularized"):
+    for method in ("straight", "pg", "pg_regularized", "straight_mac", "pg_mac", "pg_regularized_mac"):
+        base_method = method.replace("_mac", "")
+        use_mac = method.endswith("_mac")
         lambdas = {"dev": 0.0, "curvature": 0.0, "velocity": 0.0} if method == "straight" else (REG if method == "pg_regularized" else {"dev": 0.0, "curvature": 0.0, "velocity": 0.0})
-        train, action, reg_rows = make_paths(a, b, method if method != "pg" else "pg")
-        val, val_action, val_reg_rows = make_paths(av, bv, method if method != "pg" else "pg")
+        train, action, reg_rows = make_paths(a, b, base_method)
+        val, val_action, val_reg_rows = make_paths(av, bv, base_method)
         x, u = sample_path(np.repeat(train, repeats, axis=0), ts)
         xv, uv = sample_path(np.repeat(val, repeats, axis=0), tv)
         # Same velocity-network basis, design, ridge penalty, and budget for every method.
         phi = features(x, ts, w, phase)
-        coef = np.linalg.solve(phi.T @ phi + 0.1 * np.eye(phi.shape[1]), phi.T @ u)
+        coef, retained_fraction = fit_velocity(phi, u, mac=use_mac)
         pred = features(xv, tv, w, phase) @ coef
         mse = float(np.mean((pred - uv) ** 2)); moment = float(np.mean(uv * uv))
         generated = source.copy()
@@ -107,7 +123,7 @@ def run(seed):
             delta = np.eye(2)[axis] * h
             grads.append((features(xv[:200] + delta, tv[:200], w, phase) @ coef - features(xv[:200] - delta, tv[:200], w, phase) @ coef) / (2 * h))
         jacobian = float(np.mean(np.sum(np.stack(grads, axis=-1) ** 2, axis=(1, 2))))
-        results.append({"method": method, "validation_mse": mse, "normalized_mse": mse / moment,
+        results.append({"method": method, "mac_keep_fraction": retained_fraction, "validation_mse": mse, "normalized_mse": mse / moment,
                         "mmd_biased": mmd(generated, target), "empirical_w2": float(np.sqrt(dist[ri, ci].mean())),
                         "mean_velocity_norm": float(np.linalg.norm(field, axis=1).mean()),
                         "mean_squared_spatial_jacobian": jacobian, "mean_scalar_action": float(action.mean()),

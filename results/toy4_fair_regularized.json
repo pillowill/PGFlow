@@ -17,6 +17,7 @@
     "results": [
       {
         "method": "straight",
+        "mac_keep_fraction": 1.0,
         "validation_mse": 4.491333628445128,
         "normalized_mse": 0.6758791023077702,
         "mmd_biased": 0.15005310207957206,
@@ -38,6 +39,7 @@
       },
       {
         "method": "pg",
+        "mac_keep_fraction": 1.0,
         "validation_mse": 9.00572614214353,
         "normalized_mse": 1.0144040822183342,
         "mmd_biased": 0.125516871009338,
@@ -59,12 +61,79 @@
       },
       {
         "method": "pg_regularized",
+        "mac_keep_fraction": 1.0,
         "validation_mse": 8.959039652212642,
         "normalized_mse": 1.011487312997271,
         "mmd_biased": 0.12574771102230292,
         "empirical_w2": 3.062311469485783,
         "mean_velocity_norm": 2.655162143558245,
         "mean_squared_spatial_jacobian": 28.01516407365849,
+        "mean_scalar_action": 7.656634641149218,
+        "mean_validation_scalar_action": 9.99684199476022,
+        "mean_path_regularizers": {
+          "dev": 0.17070171097987033,
+          "curvature": 0.007859050416713604,
+          "velocity": 0.007859050416713602
+        },
+        "mean_validation_path_regularizers": {
+          "dev": 0.2862089759944911,
+          "curvature": 0.012474520955871902,
+          "velocity": 0.012474520955871902
+        }
+      },
+      {
+        "method": "straight_mac",
+        "mac_keep_fraction": 0.7,
+        "validation_mse": 5.394506488855853,
+        "normalized_mse": 0.8117932232844546,
+        "mmd_biased": 0.18363080249266622,
+        "empirical_w2": 2.848275966963846,
+        "mean_velocity_norm": 2.2557054980643954,
+        "mean_squared_spatial_jacobian": 10.861929799241379,
+        "mean_scalar_action": 11.21125180387167,
+        "mean_validation_scalar_action": 18.0465315086067,
+        "mean_path_regularizers": {
+          "dev": 0.0,
+          "curvature": 7.676240884235275e-32,
+          "velocity": 7.638238159439778e-32
+        },
+        "mean_validation_path_regularizers": {
+          "dev": 0.0,
+          "curvature": 7.322935914258668e-32,
+          "velocity": 7.325136977052253e-32
+        }
+      },
+      {
+        "method": "pg_mac",
+        "mac_keep_fraction": 0.7,
+        "validation_mse": 8.09841814949274,
+        "normalized_mse": 0.9122050016503328,
+        "mmd_biased": 0.09307373721000567,
+        "empirical_w2": 2.1014153371728854,
+        "mean_velocity_norm": 2.08089570203881,
+        "mean_squared_spatial_jacobian": 14.950172531488409,
+        "mean_scalar_action": 7.642572941533483,
+        "mean_validation_scalar_action": 9.97280401023667,
+        "mean_path_regularizers": {
+          "dev": 0.172705289127586,
+          "curvature": 0.007912304983418529,
+          "velocity": 0.007912304983418529
+        },
+        "mean_validation_path_regularizers": {
+          "dev": 0.28879650118261685,
+          "curvature": 0.012532613901662104,
+          "velocity": 0.0125326139016621
+        }
+      },
+      {
+        "method": "pg_regularized_mac",
+        "mac_keep_fraction": 0.7,
+        "validation_mse": 8.079355802206212,
+        "normalized_mse": 0.9121698539535057,
+        "mmd_biased": 0.09284877157565852,
+        "empirical_w2": 2.096556081671639,
+        "mean_velocity_norm": 2.07942136454815,
+        "mean_squared_spatial_jacobian": 14.877145056245002,
         "mean_scalar_action": 7.656634641149218,
         "mean_validation_scalar_action": 9.99684199476022,
         "mean_path_regularizers": {
@@ -98,6 +167,7 @@
     "results": [
       {
         "method": "straight",
+        "mac_keep_fraction": 1.0,
         "validation_mse": 2.864315291934875,
         "normalized_mse": 0.7508343514356474,
         "mmd_biased": 0.06031384648053839,
@@ -119,6 +189,7 @@
       },
       {
         "method": "pg",
+        "mac_keep_fraction": 1.0,
         "validation_mse": 4.118024246579905,
         "normalized_mse": 1.1501910940751834,
         "mmd_biased": 0.05929635561715124,
@@ -140,12 +211,79 @@
       },
       {
         "method": "pg_regularized",
+        "mac_keep_fraction": 1.0,
         "validation_mse": 4.100340490691646,
         "normalized_mse": 1.1378224824899432,
         "mmd_biased": 0.05928902939160774,
         "empirical_w2": 1.9594197708774341,
         "mean_velocity_norm": 2.3591827715322267,
         "mean_squared_spatial_jacobian": 20.57386497776209,
+        "mean_scalar_action": 8.207122198044534,
+        "mean_validation_scalar_action": 6.040394952609856,
+        "mean_path_regularizers": {
+          "dev": 0.20195536550071663,
+          "curvature": 0.009250265413012075,
+          "velocity": 0.009250265413012075
+        },
+        "mean_validation_path_regularizers": {
+          "dev": 0.06844049350963254,
+          "curvature": 0.004044308419546617,
+          "velocity": 0.004044308419546617
+        }
+      },
+      {
+        "method": "straight_mac",
+        "mac_keep_fraction": 0.7,
+        "validation_mse": 3.104089505770683,
+        "normalized_mse": 0.813687319069245,
+        "mmd_biased": 0.048345965736364016,
+        "empirical_w2": 1.7666707735789617,
+        "mean_velocity_norm": 2.1515732971987256,
+        "mean_squared_spatial_jacobian": 7.805057816471054,
+        "mean_scalar_action": 11.801385105697538,
+        "mean_validation_scalar_action": 7.39069842032621,
+        "mean_path_regularizers": {
+          "dev": 0.0,
+          "curvature": 9.036714787684881e-32,
+          "velocity": 8.959976366987818e-32
+        },
+        "mean_validation_path_regularizers": {
+          "dev": 0.0,
+          "curvature": 6.360589990975745e-32,
+          "velocity": 6.309346497812585e-32
+        }
+      },
+      {
+        "method": "pg_mac",
+        "mac_keep_fraction": 0.7,
+        "validation_mse": 3.20317781271946,
+        "normalized_mse": 0.894668504195671,
+        "mmd_biased": 0.10624880173707146,
+        "empirical_w2": 2.4677252387995994,
+        "mean_velocity_norm": 2.393470664653794,
+        "mean_squared_spatial_jacobian": 18.399227038177234,
+        "mean_scalar_action": 8.190519561413558,
+        "mean_validation_scalar_action": 6.035769051950497,
+        "mean_path_regularizers": {
+          "dev": 0.20451540481731434,
+          "curvature": 0.009372436589080284,
+          "velocity": 0.009372436589080284
+        },
+        "mean_validation_path_regularizers": {
+          "dev": 0.07094674201184785,
+          "curvature": 0.0042215115510991115,
+          "velocity": 0.004221511551099111
+        }
+      },
+      {
+        "method": "pg_regularized_mac",
+        "mac_keep_fraction": 0.7,
+        "validation_mse": 3.189004532438095,
+        "normalized_mse": 0.8849316445811395,
+        "mmd_biased": 0.10609658032451896,
+        "empirical_w2": 2.464302274764011,
+        "mean_velocity_norm": 2.392547207371222,
+        "mean_squared_spatial_jacobian": 18.382116867701036,
         "mean_scalar_action": 8.207122198044534,
         "mean_validation_scalar_action": 6.040394952609856,
         "mean_path_regularizers": {
