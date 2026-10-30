@@ -1,7 +1,7 @@
 """Invariants for the torch physical path implementation."""
 import sys
 from pathlib import Path
-sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'CrystalFlow-project'))
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'repos'/'CrystalFlow-project'))
 import torch
 from diffcsp.pl_modules.physical_path_torch import physical_path_torch, torch_action
 from diffcsp.pl_modules.physical_path import _action

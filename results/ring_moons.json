@@ -1,0 +1,2869 @@
+{
+  "config": {
+    "source": "standard normal",
+    "pairing": "independent",
+    "train_pairs": 250,
+    "validation_pairs": 100,
+    "time_samples_per_pair": 4,
+    "features": 128,
+    "ridge": 0.1,
+    "seeds": 5,
+    "ring_radius": 2.0,
+    "ring_noise": 0.1,
+    "moons_noise": 0.08,
+    "metric": "fixed Gaussian center prior; anisotropy fixed x axis; not a learned normal field",
+    "note": "zero path explicitly uses straight route; finite-sample metrics and local optimization; elapsed includes validation path computation"
+  },
+  "results": [
+    {
+      "dataset": "ring",
+      "seed": 0,
+      "method": "straight",
+      "mean_training_path_objective": 7.877213291013288,
+      "mean_straight_objective_same_metric": 7.877213291013288,
+      "validation_mse": 2.1791717777588544,
+      "normalized_mse": 0.7070180229112709,
+      "velocity_second_moment": 3.082201170467666,
+      "mean_velocity_norm": 1.1529581726423348,
+      "mean_squared_spatial_jacobian": 6.607067981371808,
+      "path_seconds": 0.02842909999890253,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.006651859080144873,
+          "empirical_w2": 0.5049953906694843,
+          "mode_fractions": [
+            0.0925,
+            0.1375,
+            0.1575,
+            0.095,
+            0.0925,
+            0.185,
+            0.0825,
+            0.1575
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.65,
+          "trajectory_gaussian_potential": 0.16137486128269385
+        },
+        "50": {
+          "mmd_biased": 0.00614299850270017,
+          "empirical_w2": 0.5031249206166125,
+          "mode_fractions": [
+            0.095,
+            0.14,
+            0.1575,
+            0.0975,
+            0.085,
+            0.185,
+            0.0825,
+            0.1575
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6525,
+          "trajectory_gaussian_potential": 0.13418516895967492
+        },
+        "100": {
+          "mmd_biased": 0.00616583352528377,
+          "empirical_w2": 0.5040412781726802,
+          "mode_fractions": [
+            0.095,
+            0.14,
+            0.1575,
+            0.1,
+            0.0825,
+            0.185,
+            0.0825,
+            0.1575
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6575,
+          "trajectory_gaussian_potential": 0.13099161943280038
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 0,
+      "method": "zero",
+      "mean_training_path_objective": 7.877213291013288,
+      "mean_straight_objective_same_metric": 7.877213291013288,
+      "validation_mse": 2.1791717777588544,
+      "normalized_mse": 0.7070180229112709,
+      "velocity_second_moment": 3.082201170467666,
+      "mean_velocity_norm": 1.1529581726423348,
+      "mean_squared_spatial_jacobian": 6.607067981371808,
+      "path_seconds": 0.022349300037603825,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.006651859080144873,
+          "empirical_w2": 0.5049953906694843,
+          "mode_fractions": [
+            0.0925,
+            0.1375,
+            0.1575,
+            0.095,
+            0.0925,
+            0.185,
+            0.0825,
+            0.1575
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.65,
+          "trajectory_gaussian_potential": 0.16137486128269385
+        },
+        "50": {
+          "mmd_biased": 0.00614299850270017,
+          "empirical_w2": 0.5031249206166125,
+          "mode_fractions": [
+            0.095,
+            0.14,
+            0.1575,
+            0.0975,
+            0.085,
+            0.185,
+            0.0825,
+            0.1575
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6525,
+          "trajectory_gaussian_potential": 0.13418516895967492
+        },
+        "100": {
+          "mmd_biased": 0.00616583352528377,
+          "empirical_w2": 0.5040412781726802,
+          "mode_fractions": [
+            0.095,
+            0.14,
+            0.1575,
+            0.1,
+            0.0825,
+            0.185,
+            0.0825,
+            0.1575
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6575,
+          "trajectory_gaussian_potential": 0.13099161943280038
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 0,
+      "method": "scalar",
+      "mean_training_path_objective": 5.10477955940901,
+      "mean_straight_objective_same_metric": 7.877213291013288,
+      "validation_mse": 3.469998058704485,
+      "normalized_mse": 0.8909767533113516,
+      "velocity_second_moment": 3.894599994677858,
+      "mean_velocity_norm": 0.990479487275695,
+      "mean_squared_spatial_jacobian": 6.517631193946644,
+      "path_seconds": 2.832852100022137,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.004833528612595783,
+          "empirical_w2": 0.5779184696730274,
+          "mode_fractions": [
+            0.07,
+            0.175,
+            0.095,
+            0.155,
+            0.085,
+            0.1875,
+            0.055,
+            0.1775
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.575,
+          "trajectory_gaussian_potential": 0.08895330433533855
+        },
+        "50": {
+          "mmd_biased": 0.005343920393658719,
+          "empirical_w2": 0.6059516619146669,
+          "mode_fractions": [
+            0.0625,
+            0.1775,
+            0.0925,
+            0.1625,
+            0.0675,
+            0.2075,
+            0.045,
+            0.185
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.56,
+          "trajectory_gaussian_potential": 0.07842663644800027
+        },
+        "100": {
+          "mmd_biased": 0.0054910591905196204,
+          "empirical_w2": 0.6104184273795443,
+          "mode_fractions": [
+            0.0575,
+            0.18,
+            0.09,
+            0.1625,
+            0.065,
+            0.21,
+            0.045,
+            0.19
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.555,
+          "trajectory_gaussian_potential": 0.07712314945421365
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 0,
+      "method": "anisotropic",
+      "mean_training_path_objective": 3.7743390617199783,
+      "mean_straight_objective_same_metric": 5.410454631087976,
+      "validation_mse": 3.0524994617252075,
+      "normalized_mse": 0.8578250378820697,
+      "velocity_second_moment": 3.5584173076384986,
+      "mean_velocity_norm": 1.072434484910051,
+      "mean_squared_spatial_jacobian": 8.470524392399566,
+      "path_seconds": 2.933083599957172,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.008808724148671288,
+          "empirical_w2": 0.6392043703639431,
+          "mode_fractions": [
+            0.055,
+            0.19,
+            0.1225,
+            0.1425,
+            0.075,
+            0.1925,
+            0.06,
+            0.1625
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.665,
+          "trajectory_gaussian_potential": 0.1094205958763546
+        },
+        "50": {
+          "mmd_biased": 0.008110108143665862,
+          "empirical_w2": 0.6480029000982332,
+          "mode_fractions": [
+            0.06,
+            0.1925,
+            0.105,
+            0.15,
+            0.075,
+            0.205,
+            0.0425,
+            0.17
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6575,
+          "trajectory_gaussian_potential": 0.09336119358925711
+        },
+        "100": {
+          "mmd_biased": 0.008145920409329599,
+          "empirical_w2": 0.6501193564257947,
+          "mode_fractions": [
+            0.055,
+            0.195,
+            0.1025,
+            0.15,
+            0.075,
+            0.2075,
+            0.04,
+            0.175
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.65,
+          "trajectory_gaussian_potential": 0.09139413392442532
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 0,
+      "method": "repulsion",
+      "mean_training_path_objective": 5.307020837187588,
+      "mean_straight_objective_same_metric": 8.289222165762862,
+      "validation_mse": 3.526899126739439,
+      "normalized_mse": 0.8977790555839972,
+      "velocity_second_moment": 3.92847115869196,
+      "mean_velocity_norm": 0.9785550674482962,
+      "mean_squared_spatial_jacobian": 6.702311710554338,
+      "path_seconds": 3.0094963999581523,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.004884696476220252,
+          "empirical_w2": 0.5772832115773139,
+          "mode_fractions": [
+            0.0675,
+            0.1725,
+            0.0975,
+            0.1575,
+            0.0875,
+            0.18,
+            0.06,
+            0.1775
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.5725,
+          "trajectory_gaussian_potential": 0.08181392479819007
+        },
+        "50": {
+          "mmd_biased": 0.0055000521832784255,
+          "empirical_w2": 0.6069875557248829,
+          "mode_fractions": [
+            0.055,
+            0.175,
+            0.0925,
+            0.17,
+            0.0725,
+            0.1925,
+            0.0525,
+            0.19
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.5525,
+          "trajectory_gaussian_potential": 0.07200213831485668
+        },
+        "100": {
+          "mmd_biased": 0.0056528935504743805,
+          "empirical_w2": 0.6116306161990794,
+          "mode_fractions": [
+            0.0525,
+            0.175,
+            0.0925,
+            0.17,
+            0.07,
+            0.195,
+            0.0525,
+            0.1925
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.545,
+          "trajectory_gaussian_potential": 0.07079253320935235
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 1,
+      "method": "straight",
+      "mean_training_path_objective": 8.719822232284535,
+      "mean_straight_objective_same_metric": 8.719822232284535,
+      "validation_mse": 2.104744127021718,
+      "normalized_mse": 0.6812121680811222,
+      "velocity_second_moment": 3.0897042443479585,
+      "mean_velocity_norm": 1.2166576327056102,
+      "mean_squared_spatial_jacobian": 7.6815898048089695,
+      "path_seconds": 0.022418600041419268,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.0074945383481853645,
+          "empirical_w2": 0.515122608265712,
+          "mode_fractions": [
+            0.1,
+            0.125,
+            0.16,
+            0.0675,
+            0.1,
+            0.205,
+            0.09,
+            0.1525
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.635,
+          "trajectory_gaussian_potential": 0.15646329954725163
+        },
+        "50": {
+          "mmd_biased": 0.007163339059553242,
+          "empirical_w2": 0.4992171799365004,
+          "mode_fractions": [
+            0.0975,
+            0.1275,
+            0.155,
+            0.07,
+            0.1,
+            0.2075,
+            0.0875,
+            0.155
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6125,
+          "trajectory_gaussian_potential": 0.1309011847150656
+        },
+        "100": {
+          "mmd_biased": 0.007166095207075673,
+          "empirical_w2": 0.4976705769471452,
+          "mode_fractions": [
+            0.095,
+            0.1275,
+            0.155,
+            0.07,
+            0.1,
+            0.2075,
+            0.0875,
+            0.1575
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.61,
+          "trajectory_gaussian_potential": 0.12788402896329862
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 1,
+      "method": "zero",
+      "mean_training_path_objective": 8.719822232284535,
+      "mean_straight_objective_same_metric": 8.719822232284535,
+      "validation_mse": 2.104744127021718,
+      "normalized_mse": 0.6812121680811222,
+      "velocity_second_moment": 3.0897042443479585,
+      "mean_velocity_norm": 1.2166576327056102,
+      "mean_squared_spatial_jacobian": 7.6815898048089695,
+      "path_seconds": 0.022260199999436736,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.0074945383481853645,
+          "empirical_w2": 0.515122608265712,
+          "mode_fractions": [
+            0.1,
+            0.125,
+            0.16,
+            0.0675,
+            0.1,
+            0.205,
+            0.09,
+            0.1525
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.635,
+          "trajectory_gaussian_potential": 0.15646329954725163
+        },
+        "50": {
+          "mmd_biased": 0.007163339059553242,
+          "empirical_w2": 0.4992171799365004,
+          "mode_fractions": [
+            0.0975,
+            0.1275,
+            0.155,
+            0.07,
+            0.1,
+            0.2075,
+            0.0875,
+            0.155
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6125,
+          "trajectory_gaussian_potential": 0.1309011847150656
+        },
+        "100": {
+          "mmd_biased": 0.007166095207075673,
+          "empirical_w2": 0.4976705769471452,
+          "mode_fractions": [
+            0.095,
+            0.1275,
+            0.155,
+            0.07,
+            0.1,
+            0.2075,
+            0.0875,
+            0.1575
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.61,
+          "trajectory_gaussian_potential": 0.12788402896329862
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 1,
+      "method": "scalar",
+      "mean_training_path_objective": 5.522615504230453,
+      "mean_straight_objective_same_metric": 8.719822232284535,
+      "validation_mse": 3.180204435588113,
+      "normalized_mse": 0.8475922544076182,
+      "velocity_second_moment": 3.752045183342026,
+      "mean_velocity_norm": 1.1417348799160552,
+      "mean_squared_spatial_jacobian": 5.025651927624565,
+      "path_seconds": 2.922813099983614,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.006451631204387742,
+          "empirical_w2": 0.47681284707648613,
+          "mode_fractions": [
+            0.0825,
+            0.1425,
+            0.1525,
+            0.0675,
+            0.1375,
+            0.165,
+            0.1175,
+            0.135
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.69,
+          "trajectory_gaussian_potential": 0.09949545536749148
+        },
+        "50": {
+          "mmd_biased": 0.006386349881471576,
+          "empirical_w2": 0.4860618504305034,
+          "mode_fractions": [
+            0.0725,
+            0.1525,
+            0.1525,
+            0.0675,
+            0.14,
+            0.165,
+            0.115,
+            0.135
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6875,
+          "trajectory_gaussian_potential": 0.08741208870618208
+        },
+        "100": {
+          "mmd_biased": 0.0064391930410153675,
+          "empirical_w2": 0.48785033745753387,
+          "mode_fractions": [
+            0.0725,
+            0.155,
+            0.15,
+            0.0675,
+            0.14,
+            0.165,
+            0.115,
+            0.135
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.69,
+          "trajectory_gaussian_potential": 0.08591742831044204
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 1,
+      "method": "anisotropic",
+      "mean_training_path_objective": 3.9718456522293315,
+      "mean_straight_objective_same_metric": 5.901120880438177,
+      "validation_mse": 2.774933978755266,
+      "normalized_mse": 0.7969680111435897,
+      "velocity_second_moment": 3.4818636883222482,
+      "mean_velocity_norm": 1.320358367541624,
+      "mean_squared_spatial_jacobian": 7.745272182582568,
+      "path_seconds": 3.06657379999524,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.006545187806143438,
+          "empirical_w2": 0.49556417849943174,
+          "mode_fractions": [
+            0.1225,
+            0.145,
+            0.1575,
+            0.0675,
+            0.14,
+            0.1075,
+            0.1275,
+            0.1325
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6725,
+          "trajectory_gaussian_potential": 0.11070886996013837
+        },
+        "50": {
+          "mmd_biased": 0.005672648894294086,
+          "empirical_w2": 0.4848865972083857,
+          "mode_fractions": [
+            0.135,
+            0.145,
+            0.1325,
+            0.0825,
+            0.155,
+            0.11,
+            0.105,
+            0.135
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6275,
+          "trajectory_gaussian_potential": 0.09467254346700281
+        },
+        "100": {
+          "mmd_biased": 0.005762768870952506,
+          "empirical_w2": 0.4859863069122418,
+          "mode_fractions": [
+            0.1375,
+            0.145,
+            0.125,
+            0.0875,
+            0.155,
+            0.1125,
+            0.1025,
+            0.135
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.615,
+          "trajectory_gaussian_potential": 0.09269105197801922
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 1,
+      "method": "repulsion",
+      "mean_training_path_objective": 5.800802396208272,
+      "mean_straight_objective_same_metric": 9.217736962756286,
+      "validation_mse": 3.2259300457959417,
+      "normalized_mse": 0.849928804123172,
+      "velocity_second_moment": 3.795529731603777,
+      "mean_velocity_norm": 1.1419759656774808,
+      "mean_squared_spatial_jacobian": 5.127845299219433,
+      "path_seconds": 3.1837273000273854,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.006852791792028801,
+          "empirical_w2": 0.4861589222108154,
+          "mode_fractions": [
+            0.08,
+            0.1525,
+            0.145,
+            0.07,
+            0.135,
+            0.1675,
+            0.1175,
+            0.1325
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6825,
+          "trajectory_gaussian_potential": 0.09210049145531966
+        },
+        "50": {
+          "mmd_biased": 0.0069245532073254346,
+          "empirical_w2": 0.497923909627552,
+          "mode_fractions": [
+            0.07,
+            0.16,
+            0.1525,
+            0.0625,
+            0.1375,
+            0.1725,
+            0.1075,
+            0.1375
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.695,
+          "trajectory_gaussian_potential": 0.08079022983501341
+        },
+        "100": {
+          "mmd_biased": 0.006990939572899646,
+          "empirical_w2": 0.4999202826599112,
+          "mode_fractions": [
+            0.07,
+            0.16,
+            0.1525,
+            0.0625,
+            0.1375,
+            0.1725,
+            0.105,
+            0.14
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6925,
+          "trajectory_gaussian_potential": 0.07939381144572721
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 2,
+      "method": "straight",
+      "mean_training_path_objective": 7.290020421574327,
+      "mean_straight_objective_same_metric": 7.290020421574327,
+      "validation_mse": 1.9873320992390604,
+      "normalized_mse": 0.7107903309436013,
+      "velocity_second_moment": 2.7959470081715954,
+      "mean_velocity_norm": 1.3463005827416565,
+      "mean_squared_spatial_jacobian": 7.92399058152372,
+      "path_seconds": 0.02851789997657761,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.008575361019362737,
+          "empirical_w2": 0.5545892290483113,
+          "mode_fractions": [
+            0.12,
+            0.1875,
+            0.0475,
+            0.18,
+            0.0925,
+            0.0775,
+            0.1775,
+            0.1175
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.605,
+          "trajectory_gaussian_potential": 0.16830305928377484
+        },
+        "50": {
+          "mmd_biased": 0.007447237179449617,
+          "empirical_w2": 0.5504879953658427,
+          "mode_fractions": [
+            0.115,
+            0.19,
+            0.0475,
+            0.1825,
+            0.0875,
+            0.0825,
+            0.1825,
+            0.1125
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.5975,
+          "trajectory_gaussian_potential": 0.13928284796376492
+        },
+        "100": {
+          "mmd_biased": 0.007387391400872079,
+          "empirical_w2": 0.5506562285256602,
+          "mode_fractions": [
+            0.11,
+            0.1925,
+            0.0475,
+            0.18,
+            0.09,
+            0.0825,
+            0.1825,
+            0.115
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.5975,
+          "trajectory_gaussian_potential": 0.13595240637376907
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 2,
+      "method": "zero",
+      "mean_training_path_objective": 7.290020421574327,
+      "mean_straight_objective_same_metric": 7.290020421574327,
+      "validation_mse": 1.9873320992390604,
+      "normalized_mse": 0.7107903309436013,
+      "velocity_second_moment": 2.7959470081715954,
+      "mean_velocity_norm": 1.3463005827416565,
+      "mean_squared_spatial_jacobian": 7.92399058152372,
+      "path_seconds": 0.021208400023169816,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.008575361019362737,
+          "empirical_w2": 0.5545892290483113,
+          "mode_fractions": [
+            0.12,
+            0.1875,
+            0.0475,
+            0.18,
+            0.0925,
+            0.0775,
+            0.1775,
+            0.1175
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.605,
+          "trajectory_gaussian_potential": 0.16830305928377484
+        },
+        "50": {
+          "mmd_biased": 0.007447237179449617,
+          "empirical_w2": 0.5504879953658427,
+          "mode_fractions": [
+            0.115,
+            0.19,
+            0.0475,
+            0.1825,
+            0.0875,
+            0.0825,
+            0.1825,
+            0.1125
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.5975,
+          "trajectory_gaussian_potential": 0.13928284796376492
+        },
+        "100": {
+          "mmd_biased": 0.007387391400872079,
+          "empirical_w2": 0.5506562285256602,
+          "mode_fractions": [
+            0.11,
+            0.1925,
+            0.0475,
+            0.18,
+            0.09,
+            0.0825,
+            0.1825,
+            0.115
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.5975,
+          "trajectory_gaussian_potential": 0.13595240637376907
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 2,
+      "method": "scalar",
+      "mean_training_path_objective": 4.723135179440136,
+      "mean_straight_objective_same_metric": 7.290020421574327,
+      "validation_mse": 3.155624223757026,
+      "normalized_mse": 0.870295873398321,
+      "velocity_second_moment": 3.6259211610816693,
+      "mean_velocity_norm": 1.155773360790039,
+      "mean_squared_spatial_jacobian": 6.666411599782763,
+      "path_seconds": 2.696927600016352,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.008619416505105115,
+          "empirical_w2": 0.5685681249069511,
+          "mode_fractions": [
+            0.135,
+            0.2125,
+            0.05,
+            0.155,
+            0.1,
+            0.0675,
+            0.18,
+            0.1
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6175,
+          "trajectory_gaussian_potential": 0.08713530642846304
+        },
+        "50": {
+          "mmd_biased": 0.00834053762669773,
+          "empirical_w2": 0.5693151706382683,
+          "mode_fractions": [
+            0.125,
+            0.21,
+            0.0625,
+            0.16,
+            0.0925,
+            0.07,
+            0.185,
+            0.095
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6375,
+          "trajectory_gaussian_potential": 0.07575366084974582
+        },
+        "100": {
+          "mmd_biased": 0.008372799104332862,
+          "empirical_w2": 0.5696082371012401,
+          "mode_fractions": [
+            0.125,
+            0.2075,
+            0.065,
+            0.16,
+            0.0925,
+            0.07,
+            0.185,
+            0.095
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.635,
+          "trajectory_gaussian_potential": 0.07435246506040089
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 2,
+      "method": "anisotropic",
+      "mean_training_path_objective": 3.5796876747815407,
+      "mean_straight_objective_same_metric": 4.921342765792277,
+      "validation_mse": 2.5319504553550187,
+      "normalized_mse": 0.7783601619260216,
+      "velocity_second_moment": 3.252929144125011,
+      "mean_velocity_norm": 1.3392409283163482,
+      "mean_squared_spatial_jacobian": 9.237641332182621,
+      "path_seconds": 2.878330099978484,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.011694588134541606,
+          "empirical_w2": 0.8695188810483965,
+          "mode_fractions": [
+            0.13,
+            0.2,
+            0.08,
+            0.1675,
+            0.08,
+            0.075,
+            0.1775,
+            0.09
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.605,
+          "trajectory_gaussian_potential": 0.10859405253687468
+        },
+        "50": {
+          "mmd_biased": 0.009888331335231815,
+          "empirical_w2": 0.9029740981121683,
+          "mode_fractions": [
+            0.1425,
+            0.2,
+            0.0625,
+            0.1725,
+            0.09,
+            0.0775,
+            0.1725,
+            0.0825
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6,
+          "trajectory_gaussian_potential": 0.09162589497314234
+        },
+        "100": {
+          "mmd_biased": 0.009775220243766092,
+          "empirical_w2": 0.9108751147489713,
+          "mode_fractions": [
+            0.1475,
+            0.1975,
+            0.0625,
+            0.17,
+            0.0925,
+            0.0775,
+            0.1725,
+            0.08
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.5975,
+          "trajectory_gaussian_potential": 0.08955823463158571
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 2,
+      "method": "repulsion",
+      "mean_training_path_objective": 4.920076087916852,
+      "mean_straight_objective_same_metric": 7.668622806696253,
+      "validation_mse": 3.2110081963605803,
+      "normalized_mse": 0.882186088110366,
+      "velocity_second_moment": 3.639830915083379,
+      "mean_velocity_norm": 1.146644265943129,
+      "mean_squared_spatial_jacobian": 6.9297119954649835,
+      "path_seconds": 3.0319485999643803,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.008778307759620296,
+          "empirical_w2": 0.5751878244247154,
+          "mode_fractions": [
+            0.13,
+            0.215,
+            0.05,
+            0.16,
+            0.0975,
+            0.065,
+            0.18,
+            0.1025
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.615,
+          "trajectory_gaussian_potential": 0.08080030529790316
+        },
+        "50": {
+          "mmd_biased": 0.008652040469674493,
+          "empirical_w2": 0.5801048250051074,
+          "mode_fractions": [
+            0.1275,
+            0.2075,
+            0.065,
+            0.165,
+            0.09,
+            0.07,
+            0.1825,
+            0.0925
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.625,
+          "trajectory_gaussian_potential": 0.06991650202245103
+        },
+        "100": {
+          "mmd_biased": 0.008698797541804804,
+          "empirical_w2": 0.5812125138940482,
+          "mode_fractions": [
+            0.125,
+            0.21,
+            0.065,
+            0.165,
+            0.09,
+            0.07,
+            0.1825,
+            0.0925
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6275,
+          "trajectory_gaussian_potential": 0.06858332714657348
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 3,
+      "method": "straight",
+      "mean_training_path_objective": 7.717111291354569,
+      "mean_straight_objective_same_metric": 7.717111291354569,
+      "validation_mse": 1.909465262527048,
+      "normalized_mse": 0.6648118946279314,
+      "velocity_second_moment": 2.8721887769407304,
+      "mean_velocity_norm": 1.1119341874421536,
+      "mean_squared_spatial_jacobian": 5.455056058951309,
+      "path_seconds": 0.02140919998055324,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.009685827267125302,
+          "empirical_w2": 0.5800085579056848,
+          "mode_fractions": [
+            0.13,
+            0.115,
+            0.085,
+            0.1375,
+            0.12,
+            0.1825,
+            0.095,
+            0.135
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6775,
+          "trajectory_gaussian_potential": 0.1694366575933335
+        },
+        "50": {
+          "mmd_biased": 0.007243039997623324,
+          "empirical_w2": 0.5439638499597078,
+          "mode_fractions": [
+            0.13,
+            0.1225,
+            0.0775,
+            0.155,
+            0.0975,
+            0.1825,
+            0.1025,
+            0.1325
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.645,
+          "trajectory_gaussian_potential": 0.14150116228842927
+        },
+        "100": {
+          "mmd_biased": 0.0070291485179309054,
+          "empirical_w2": 0.5402888012183737,
+          "mode_fractions": [
+            0.13,
+            0.1225,
+            0.0775,
+            0.155,
+            0.0975,
+            0.1825,
+            0.1025,
+            0.1325
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.645,
+          "trajectory_gaussian_potential": 0.13820516764807148
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 3,
+      "method": "zero",
+      "mean_training_path_objective": 7.717111291354569,
+      "mean_straight_objective_same_metric": 7.717111291354569,
+      "validation_mse": 1.909465262527048,
+      "normalized_mse": 0.6648118946279314,
+      "velocity_second_moment": 2.8721887769407304,
+      "mean_velocity_norm": 1.1119341874421536,
+      "mean_squared_spatial_jacobian": 5.455056058951309,
+      "path_seconds": 0.022900300042238086,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.009685827267125302,
+          "empirical_w2": 0.5800085579056848,
+          "mode_fractions": [
+            0.13,
+            0.115,
+            0.085,
+            0.1375,
+            0.12,
+            0.1825,
+            0.095,
+            0.135
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6775,
+          "trajectory_gaussian_potential": 0.1694366575933335
+        },
+        "50": {
+          "mmd_biased": 0.007243039997623324,
+          "empirical_w2": 0.5439638499597078,
+          "mode_fractions": [
+            0.13,
+            0.1225,
+            0.0775,
+            0.155,
+            0.0975,
+            0.1825,
+            0.1025,
+            0.1325
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.645,
+          "trajectory_gaussian_potential": 0.14150116228842927
+        },
+        "100": {
+          "mmd_biased": 0.0070291485179309054,
+          "empirical_w2": 0.5402888012183737,
+          "mode_fractions": [
+            0.13,
+            0.1225,
+            0.0775,
+            0.155,
+            0.0975,
+            0.1825,
+            0.1025,
+            0.1325
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.645,
+          "trajectory_gaussian_potential": 0.13820516764807148
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 3,
+      "method": "scalar",
+      "mean_training_path_objective": 4.8642631210716045,
+      "mean_straight_objective_same_metric": 7.717111291354569,
+      "validation_mse": 3.355902968248955,
+      "normalized_mse": 0.8900968932038389,
+      "velocity_second_moment": 3.7702670280868267,
+      "mean_velocity_norm": 1.0253928140308581,
+      "mean_squared_spatial_jacobian": 5.4342613746920065,
+      "path_seconds": 2.7501696000108495,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.012338598800402556,
+          "empirical_w2": 0.7085472325918634,
+          "mode_fractions": [
+            0.1825,
+            0.1125,
+            0.09,
+            0.1275,
+            0.1775,
+            0.125,
+            0.1,
+            0.085
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6575,
+          "trajectory_gaussian_potential": 0.0963277050132775
+        },
+        "50": {
+          "mmd_biased": 0.011315557405647603,
+          "empirical_w2": 0.702174288499927,
+          "mode_fractions": [
+            0.19,
+            0.12,
+            0.08,
+            0.145,
+            0.1575,
+            0.1225,
+            0.1075,
+            0.0775
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.635,
+          "trajectory_gaussian_potential": 0.08448341545933563
+        },
+        "100": {
+          "mmd_biased": 0.01125683733159133,
+          "empirical_w2": 0.7014524614743821,
+          "mode_fractions": [
+            0.1925,
+            0.1225,
+            0.0775,
+            0.145,
+            0.1575,
+            0.1225,
+            0.1075,
+            0.075
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6225,
+          "trajectory_gaussian_potential": 0.08300622337432602
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 3,
+      "method": "anisotropic",
+      "mean_training_path_objective": 3.7038120424866054,
+      "mean_straight_objective_same_metric": 5.484050726333288,
+      "validation_mse": 2.679330195851727,
+      "normalized_mse": 0.7972244974942566,
+      "velocity_second_moment": 3.360822709629579,
+      "mean_velocity_norm": 1.0492252843795793,
+      "mean_squared_spatial_jacobian": 5.758877137536351,
+      "path_seconds": 2.9457357000210322,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.011449483172979669,
+          "empirical_w2": 0.609931407470345,
+          "mode_fractions": [
+            0.18,
+            0.13,
+            0.0575,
+            0.1375,
+            0.1375,
+            0.155,
+            0.1025,
+            0.1
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.7225,
+          "trajectory_gaussian_potential": 0.12802368421164997
+        },
+        "50": {
+          "mmd_biased": 0.013185455724207706,
+          "empirical_w2": 0.62973337487035,
+          "mode_fractions": [
+            0.205,
+            0.1275,
+            0.0525,
+            0.1375,
+            0.1475,
+            0.15,
+            0.1,
+            0.08
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.69,
+          "trajectory_gaussian_potential": 0.11155818182386623
+        },
+        "100": {
+          "mmd_biased": 0.013555379278596957,
+          "empirical_w2": 0.6334555869931152,
+          "mode_fractions": [
+            0.2075,
+            0.1275,
+            0.0525,
+            0.1375,
+            0.1475,
+            0.15,
+            0.1,
+            0.0775
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6775,
+          "trajectory_gaussian_potential": 0.10952925228990873
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 3,
+      "method": "repulsion",
+      "mean_training_path_objective": 5.070922341723567,
+      "mean_straight_objective_same_metric": 8.116544253091448,
+      "validation_mse": 3.4334377036907324,
+      "normalized_mse": 0.8997684776508375,
+      "velocity_second_moment": 3.815912414107828,
+      "mean_velocity_norm": 1.0263047713417521,
+      "mean_squared_spatial_jacobian": 5.685864067245486,
+      "path_seconds": 3.1196906000259332,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.012337477811465325,
+          "empirical_w2": 0.7030499822215688,
+          "mode_fractions": [
+            0.1825,
+            0.115,
+            0.0875,
+            0.13,
+            0.1775,
+            0.1225,
+            0.1025,
+            0.0825
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.65,
+          "trajectory_gaussian_potential": 0.08939923510376636
+        },
+        "50": {
+          "mmd_biased": 0.011445764446788131,
+          "empirical_w2": 0.6969922022822872,
+          "mode_fractions": [
+            0.1925,
+            0.1225,
+            0.08,
+            0.1425,
+            0.16,
+            0.12,
+            0.105,
+            0.0775
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.64,
+          "trajectory_gaussian_potential": 0.07819949900561837
+        },
+        "100": {
+          "mmd_biased": 0.011396706077009822,
+          "empirical_w2": 0.69656862973092,
+          "mode_fractions": [
+            0.1925,
+            0.1225,
+            0.0775,
+            0.15,
+            0.155,
+            0.12,
+            0.1025,
+            0.08
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6375,
+          "trajectory_gaussian_potential": 0.0768098244164587
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 4,
+      "method": "straight",
+      "mean_training_path_objective": 8.03467610708522,
+      "mean_straight_objective_same_metric": 8.03467610708522,
+      "validation_mse": 2.071595360049361,
+      "normalized_mse": 0.7743902603959535,
+      "velocity_second_moment": 2.675130959149891,
+      "mean_velocity_norm": 1.1273057459454845,
+      "mean_squared_spatial_jacobian": 6.068071343090413,
+      "path_seconds": 0.022923100041225553,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.010874669077504007,
+          "empirical_w2": 0.7394357732855338,
+          "mode_fractions": [
+            0.1575,
+            0.0825,
+            0.1425,
+            0.145,
+            0.08,
+            0.0775,
+            0.1475,
+            0.1675
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.71,
+          "trajectory_gaussian_potential": 0.18537417943514747
+        },
+        "50": {
+          "mmd_biased": 0.007183133735324754,
+          "empirical_w2": 0.7447853642459209,
+          "mode_fractions": [
+            0.1575,
+            0.08,
+            0.1425,
+            0.1525,
+            0.0675,
+            0.0875,
+            0.1675,
+            0.145
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.685,
+          "trajectory_gaussian_potential": 0.15537610407781263
+        },
+        "100": {
+          "mmd_biased": 0.006888933694044308,
+          "empirical_w2": 0.7468156878996514,
+          "mode_fractions": [
+            0.1575,
+            0.08,
+            0.1425,
+            0.155,
+            0.065,
+            0.0875,
+            0.17,
+            0.1425
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.675,
+          "trajectory_gaussian_potential": 0.1518016129923204
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 4,
+      "method": "zero",
+      "mean_training_path_objective": 8.03467610708522,
+      "mean_straight_objective_same_metric": 8.03467610708522,
+      "validation_mse": 2.071595360049361,
+      "normalized_mse": 0.7743902603959535,
+      "velocity_second_moment": 2.675130959149891,
+      "mean_velocity_norm": 1.1273057459454845,
+      "mean_squared_spatial_jacobian": 6.068071343090413,
+      "path_seconds": 0.0211974999983795,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.010874669077504007,
+          "empirical_w2": 0.7394357732855338,
+          "mode_fractions": [
+            0.1575,
+            0.0825,
+            0.1425,
+            0.145,
+            0.08,
+            0.0775,
+            0.1475,
+            0.1675
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.71,
+          "trajectory_gaussian_potential": 0.18537417943514747
+        },
+        "50": {
+          "mmd_biased": 0.007183133735324754,
+          "empirical_w2": 0.7447853642459209,
+          "mode_fractions": [
+            0.1575,
+            0.08,
+            0.1425,
+            0.1525,
+            0.0675,
+            0.0875,
+            0.1675,
+            0.145
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.685,
+          "trajectory_gaussian_potential": 0.15537610407781263
+        },
+        "100": {
+          "mmd_biased": 0.006888933694044308,
+          "empirical_w2": 0.7468156878996514,
+          "mode_fractions": [
+            0.1575,
+            0.08,
+            0.1425,
+            0.155,
+            0.065,
+            0.0875,
+            0.17,
+            0.1425
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.675,
+          "trajectory_gaussian_potential": 0.1518016129923204
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 4,
+      "method": "scalar",
+      "mean_training_path_objective": 5.113908884094363,
+      "mean_straight_objective_same_metric": 8.03467610708522,
+      "validation_mse": 3.0781446607297176,
+      "normalized_mse": 0.912560274952775,
+      "velocity_second_moment": 3.3730864088829766,
+      "mean_velocity_norm": 1.0899860496090437,
+      "mean_squared_spatial_jacobian": 5.599917103206149,
+      "path_seconds": 2.843487299978733,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.006870152156936649,
+          "empirical_w2": 1.0431017232953546,
+          "mode_fractions": [
+            0.1875,
+            0.0475,
+            0.155,
+            0.1375,
+            0.1,
+            0.0775,
+            0.17,
+            0.125
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6875,
+          "trajectory_gaussian_potential": 0.11326142794372689
+        },
+        "50": {
+          "mmd_biased": 0.0055619677660416755,
+          "empirical_w2": 1.1482829249515563,
+          "mode_fractions": [
+            0.195,
+            0.0475,
+            0.15,
+            0.14,
+            0.09,
+            0.0875,
+            0.18,
+            0.11
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.67,
+          "trajectory_gaussian_potential": 0.09978765845728799
+        },
+        "100": {
+          "mmd_biased": 0.005497216609733013,
+          "empirical_w2": 1.1665864291407197,
+          "mode_fractions": [
+            0.195,
+            0.045,
+            0.1525,
+            0.14,
+            0.09,
+            0.0875,
+            0.1825,
+            0.1075
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6675,
+          "trajectory_gaussian_potential": 0.09810990191432545
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 4,
+      "method": "anisotropic",
+      "mean_training_path_objective": 3.8422722331503265,
+      "mean_straight_objective_same_metric": 5.665284964399383,
+      "validation_mse": 2.8125901341936657,
+      "normalized_mse": 0.8867533761987418,
+      "velocity_second_moment": 3.171783958974518,
+      "mean_velocity_norm": 1.1369337005073523,
+      "mean_squared_spatial_jacobian": 5.6256599510547405,
+      "path_seconds": 2.9086163000320084,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.010098058939266408,
+          "empirical_w2": 0.8548718216222428,
+          "mode_fractions": [
+            0.155,
+            0.08,
+            0.1625,
+            0.1175,
+            0.075,
+            0.0875,
+            0.1925,
+            0.13
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.695,
+          "trajectory_gaussian_potential": 0.12515498392361413
+        },
+        "50": {
+          "mmd_biased": 0.007591373660604583,
+          "empirical_w2": 0.8803519953991745,
+          "mode_fractions": [
+            0.19,
+            0.0775,
+            0.14,
+            0.1275,
+            0.08,
+            0.0875,
+            0.185,
+            0.1125
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.685,
+          "trajectory_gaussian_potential": 0.10812237721393979
+        },
+        "100": {
+          "mmd_biased": 0.007414133916156751,
+          "empirical_w2": 0.8855158807886531,
+          "mode_fractions": [
+            0.1925,
+            0.0775,
+            0.1375,
+            0.1275,
+            0.08,
+            0.09,
+            0.1825,
+            0.1125
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.675,
+          "trajectory_gaussian_potential": 0.10602521040056884
+        }
+      }
+    },
+    {
+      "dataset": "ring",
+      "seed": 4,
+      "method": "repulsion",
+      "mean_training_path_objective": 5.34589563099267,
+      "mean_straight_objective_same_metric": 8.470079674301324,
+      "validation_mse": 3.1436768882021364,
+      "normalized_mse": 0.9196241791028945,
+      "velocity_second_moment": 3.4184365305279756,
+      "mean_velocity_norm": 1.0873163212440848,
+      "mean_squared_spatial_jacobian": 5.8299608293469865,
+      "path_seconds": 3.0396022999775596,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.007191334320031495,
+          "empirical_w2": 1.040459333245659,
+          "mode_fractions": [
+            0.1875,
+            0.05,
+            0.1525,
+            0.135,
+            0.0975,
+            0.0775,
+            0.1675,
+            0.1325
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.685,
+          "trajectory_gaussian_potential": 0.10663506454969778
+        },
+        "50": {
+          "mmd_biased": 0.005980583445282295,
+          "empirical_w2": 1.1377822008153662,
+          "mode_fractions": [
+            0.195,
+            0.05,
+            0.15,
+            0.1325,
+            0.095,
+            0.0825,
+            0.18,
+            0.115
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.6725,
+          "trajectory_gaussian_potential": 0.09402865282063307
+        },
+        "100": {
+          "mmd_biased": 0.005916013672321974,
+          "empirical_w2": 1.1551680050829203,
+          "mode_fractions": [
+            0.1975,
+            0.0475,
+            0.1525,
+            0.1325,
+            0.095,
+            0.0825,
+            0.1825,
+            0.11
+          ],
+          "mode_coverage_min_1pct": 8,
+          "outside_radius_0_3": 0.67,
+          "trajectory_gaussian_potential": 0.09244837672607241
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 0,
+      "method": "straight",
+      "mean_training_path_objective": 6.156688894113869,
+      "mean_straight_objective_same_metric": 6.156688894113869,
+      "validation_mse": 1.4257693896801544,
+      "normalized_mse": 0.8160343418534053,
+      "velocity_second_moment": 1.7471928772530552,
+      "mean_velocity_norm": 0.8232314142965271,
+      "mean_squared_spatial_jacobian": 3.1286072730906547,
+      "path_seconds": 0.02139760000864044,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.004988127731174519,
+          "empirical_w2": 0.3297572317274382,
+          "outside_arc_0_2": 0.4225,
+          "arc_side_fractions": [
+            0.49,
+            0.51
+          ],
+          "central_gap_fraction": 0.0225,
+          "trajectory_gaussian_potential": 0.25993961442090224
+        },
+        "50": {
+          "mmd_biased": 0.0025717373693858736,
+          "empirical_w2": 0.30289511392112967,
+          "outside_arc_0_2": 0.4125,
+          "arc_side_fractions": [
+            0.4775,
+            0.5225
+          ],
+          "central_gap_fraction": 0.015,
+          "trajectory_gaussian_potential": 0.23701924782526831
+        },
+        "100": {
+          "mmd_biased": 0.0025083921416360067,
+          "empirical_w2": 0.30194053594187753,
+          "outside_arc_0_2": 0.4175,
+          "arc_side_fractions": [
+            0.4725,
+            0.5275
+          ],
+          "central_gap_fraction": 0.0125,
+          "trajectory_gaussian_potential": 0.2341316123249496
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 0,
+      "method": "zero",
+      "mean_training_path_objective": 6.156688894113869,
+      "mean_straight_objective_same_metric": 6.156688894113869,
+      "validation_mse": 1.4257693896801544,
+      "normalized_mse": 0.8160343418534053,
+      "velocity_second_moment": 1.7471928772530552,
+      "mean_velocity_norm": 0.8232314142965271,
+      "mean_squared_spatial_jacobian": 3.1286072730906547,
+      "path_seconds": 0.023592000012286007,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.004988127731174519,
+          "empirical_w2": 0.3297572317274382,
+          "outside_arc_0_2": 0.4225,
+          "arc_side_fractions": [
+            0.49,
+            0.51
+          ],
+          "central_gap_fraction": 0.0225,
+          "trajectory_gaussian_potential": 0.25993961442090224
+        },
+        "50": {
+          "mmd_biased": 0.0025717373693858736,
+          "empirical_w2": 0.30289511392112967,
+          "outside_arc_0_2": 0.4125,
+          "arc_side_fractions": [
+            0.4775,
+            0.5225
+          ],
+          "central_gap_fraction": 0.015,
+          "trajectory_gaussian_potential": 0.23701924782526831
+        },
+        "100": {
+          "mmd_biased": 0.0025083921416360067,
+          "empirical_w2": 0.30194053594187753,
+          "outside_arc_0_2": 0.4175,
+          "arc_side_fractions": [
+            0.4725,
+            0.5275
+          ],
+          "central_gap_fraction": 0.0125,
+          "trajectory_gaussian_potential": 0.2341316123249496
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 0,
+      "method": "scalar",
+      "mean_training_path_objective": 4.323800732575695,
+      "mean_straight_objective_same_metric": 6.156688894113869,
+      "validation_mse": 1.9813997353115769,
+      "normalized_mse": 0.9052935306946,
+      "velocity_second_moment": 2.1886820883292057,
+      "mean_velocity_norm": 0.7827120650693482,
+      "mean_squared_spatial_jacobian": 4.794558292476841,
+      "path_seconds": 2.9562078999588266,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.0035467026840172444,
+          "empirical_w2": 0.35506280589475697,
+          "outside_arc_0_2": 0.3275,
+          "arc_side_fractions": [
+            0.495,
+            0.505
+          ],
+          "central_gap_fraction": 0.0125,
+          "trajectory_gaussian_potential": 0.15531519368133567
+        },
+        "50": {
+          "mmd_biased": 0.0037819743931570837,
+          "empirical_w2": 0.37287157814823735,
+          "outside_arc_0_2": 0.355,
+          "arc_side_fractions": [
+            0.4975,
+            0.5025
+          ],
+          "central_gap_fraction": 0.0075,
+          "trajectory_gaussian_potential": 0.15086687604359134
+        },
+        "100": {
+          "mmd_biased": 0.0038949374921148916,
+          "empirical_w2": 0.37589763752963784,
+          "outside_arc_0_2": 0.35,
+          "arc_side_fractions": [
+            0.4975,
+            0.5025
+          ],
+          "central_gap_fraction": 0.0075,
+          "trajectory_gaussian_potential": 0.15031911201471304
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 0,
+      "method": "anisotropic",
+      "mean_training_path_objective": 2.8743543534332683,
+      "mean_straight_objective_same_metric": 4.3629415835715655,
+      "validation_mse": 1.8884353142134784,
+      "normalized_mse": 0.8732237714315542,
+      "velocity_second_moment": 2.162601816390771,
+      "mean_velocity_norm": 0.8601543745714284,
+      "mean_squared_spatial_jacobian": 4.593931538590223,
+      "path_seconds": 3.465556600014679,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.005490673222474873,
+          "empirical_w2": 0.3729902580283571,
+          "outside_arc_0_2": 0.275,
+          "arc_side_fractions": [
+            0.5,
+            0.5
+          ],
+          "central_gap_fraction": 0.0075,
+          "trajectory_gaussian_potential": 0.16186407462898283
+        },
+        "50": {
+          "mmd_biased": 0.003800872533406885,
+          "empirical_w2": 0.3529009120260585,
+          "outside_arc_0_2": 0.285,
+          "arc_side_fractions": [
+            0.495,
+            0.505
+          ],
+          "central_gap_fraction": 0.005,
+          "trajectory_gaussian_potential": 0.15597738833372976
+        },
+        "100": {
+          "mmd_biased": 0.0037500301579467266,
+          "empirical_w2": 0.35203448425860895,
+          "outside_arc_0_2": 0.2825,
+          "arc_side_fractions": [
+            0.49,
+            0.51
+          ],
+          "central_gap_fraction": 0.005,
+          "trajectory_gaussian_potential": 0.1552030266939644
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 0,
+      "method": "repulsion",
+      "mean_training_path_objective": 4.781435085243935,
+      "mean_straight_objective_same_metric": 6.920786666734526,
+      "validation_mse": 2.0762907008220264,
+      "normalized_mse": 0.910521800507782,
+      "velocity_second_moment": 2.280330574912227,
+      "mean_velocity_norm": 0.8215338810482176,
+      "mean_squared_spatial_jacobian": 5.725291539410657,
+      "path_seconds": 3.1869358999538235,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.0037281260855268616,
+          "empirical_w2": 0.3871124019089883,
+          "outside_arc_0_2": 0.3225,
+          "arc_side_fractions": [
+            0.4975,
+            0.5025
+          ],
+          "central_gap_fraction": 0.0075,
+          "trajectory_gaussian_potential": 0.13279625896895692
+        },
+        "50": {
+          "mmd_biased": 0.0039584268080192775,
+          "empirical_w2": 0.4095729031249738,
+          "outside_arc_0_2": 0.3475,
+          "arc_side_fractions": [
+            0.5,
+            0.5
+          ],
+          "central_gap_fraction": 0.01,
+          "trajectory_gaussian_potential": 0.13135893469911947
+        },
+        "100": {
+          "mmd_biased": 0.004033180540789494,
+          "empirical_w2": 0.41252785700783684,
+          "outside_arc_0_2": 0.34,
+          "arc_side_fractions": [
+            0.5,
+            0.5
+          ],
+          "central_gap_fraction": 0.01,
+          "trajectory_gaussian_potential": 0.13123501901303258
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 1,
+      "method": "straight",
+      "mean_training_path_objective": 6.2303148921766835,
+      "mean_straight_objective_same_metric": 6.2303148921766835,
+      "validation_mse": 1.4535410851968948,
+      "normalized_mse": 0.7385747848321014,
+      "velocity_second_moment": 1.9680350792470191,
+      "mean_velocity_norm": 0.9855735146355397,
+      "mean_squared_spatial_jacobian": 4.2541821767045915,
+      "path_seconds": 0.024626700032968074,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.006633084048269788,
+          "empirical_w2": 0.3389341213481795,
+          "outside_arc_0_2": 0.4575,
+          "arc_side_fractions": [
+            0.4675,
+            0.5325
+          ],
+          "central_gap_fraction": 0.01,
+          "trajectory_gaussian_potential": 0.276991792625298
+        },
+        "50": {
+          "mmd_biased": 0.005369854907613991,
+          "empirical_w2": 0.3319725677935029,
+          "outside_arc_0_2": 0.42,
+          "arc_side_fractions": [
+            0.465,
+            0.535
+          ],
+          "central_gap_fraction": 0.005,
+          "trajectory_gaussian_potential": 0.2499892362654459
+        },
+        "100": {
+          "mmd_biased": 0.005417418724374512,
+          "empirical_w2": 0.33308082062375377,
+          "outside_arc_0_2": 0.425,
+          "arc_side_fractions": [
+            0.4625,
+            0.5375
+          ],
+          "central_gap_fraction": 0.005,
+          "trajectory_gaussian_potential": 0.2465629924217605
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 1,
+      "method": "zero",
+      "mean_training_path_objective": 6.2303148921766835,
+      "mean_straight_objective_same_metric": 6.2303148921766835,
+      "validation_mse": 1.4535410851968948,
+      "normalized_mse": 0.7385747848321014,
+      "velocity_second_moment": 1.9680350792470191,
+      "mean_velocity_norm": 0.9855735146355397,
+      "mean_squared_spatial_jacobian": 4.2541821767045915,
+      "path_seconds": 0.022618899994995445,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.006633084048269788,
+          "empirical_w2": 0.3389341213481795,
+          "outside_arc_0_2": 0.4575,
+          "arc_side_fractions": [
+            0.4675,
+            0.5325
+          ],
+          "central_gap_fraction": 0.01,
+          "trajectory_gaussian_potential": 0.276991792625298
+        },
+        "50": {
+          "mmd_biased": 0.005369854907613991,
+          "empirical_w2": 0.3319725677935029,
+          "outside_arc_0_2": 0.42,
+          "arc_side_fractions": [
+            0.465,
+            0.535
+          ],
+          "central_gap_fraction": 0.005,
+          "trajectory_gaussian_potential": 0.2499892362654459
+        },
+        "100": {
+          "mmd_biased": 0.005417418724374512,
+          "empirical_w2": 0.33308082062375377,
+          "outside_arc_0_2": 0.425,
+          "arc_side_fractions": [
+            0.4625,
+            0.5375
+          ],
+          "central_gap_fraction": 0.005,
+          "trajectory_gaussian_potential": 0.2465629924217605
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 1,
+      "method": "scalar",
+      "mean_training_path_objective": 4.318754840372954,
+      "mean_straight_objective_same_metric": 6.2303148921766835,
+      "validation_mse": 2.3269946337538063,
+      "normalized_mse": 0.8612424673219978,
+      "velocity_second_moment": 2.7019041931240473,
+      "mean_velocity_norm": 0.9151599016790365,
+      "mean_squared_spatial_jacobian": 6.513262660395657,
+      "path_seconds": 3.0658141000312753,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.006735242699831723,
+          "empirical_w2": 0.3591663876226623,
+          "outside_arc_0_2": 0.365,
+          "arc_side_fractions": [
+            0.4325,
+            0.5675
+          ],
+          "central_gap_fraction": 0.0025,
+          "trajectory_gaussian_potential": 0.15416027098971333
+        },
+        "50": {
+          "mmd_biased": 0.009438497702522919,
+          "empirical_w2": 0.3830262153883649,
+          "outside_arc_0_2": 0.3275,
+          "arc_side_fractions": [
+            0.435,
+            0.565
+          ],
+          "central_gap_fraction": 0.005,
+          "trajectory_gaussian_potential": 0.1493293776669476
+        },
+        "100": {
+          "mmd_biased": 0.009835812651433073,
+          "empirical_w2": 0.3867478903339473,
+          "outside_arc_0_2": 0.3175,
+          "arc_side_fractions": [
+            0.4325,
+            0.5675
+          ],
+          "central_gap_fraction": 0.005,
+          "trajectory_gaussian_potential": 0.14877531446670403
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 1,
+      "method": "anisotropic",
+      "mean_training_path_objective": 2.94402133377292,
+      "mean_straight_objective_same_metric": 4.620981122964829,
+      "validation_mse": 1.9830208958396935,
+      "normalized_mse": 0.7817258024910728,
+      "velocity_second_moment": 2.536721814120162,
+      "mean_velocity_norm": 1.013835069071733,
+      "mean_squared_spatial_jacobian": 5.767725255659372,
+      "path_seconds": 3.494305100000929,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.004257628951307657,
+          "empirical_w2": 0.33591974666386126,
+          "outside_arc_0_2": 0.3425,
+          "arc_side_fractions": [
+            0.45,
+            0.55
+          ],
+          "central_gap_fraction": 0.01,
+          "trajectory_gaussian_potential": 0.15804760538235701
+        },
+        "50": {
+          "mmd_biased": 0.007244205866506648,
+          "empirical_w2": 0.3723309495728631,
+          "outside_arc_0_2": 0.33,
+          "arc_side_fractions": [
+            0.46,
+            0.54
+          ],
+          "central_gap_fraction": 0.01,
+          "trajectory_gaussian_potential": 0.15079410917206257
+        },
+        "100": {
+          "mmd_biased": 0.007765804162590206,
+          "empirical_w2": 0.37836078906397946,
+          "outside_arc_0_2": 0.3275,
+          "arc_side_fractions": [
+            0.4575,
+            0.5425
+          ],
+          "central_gap_fraction": 0.01,
+          "trajectory_gaussian_potential": 0.14996300091225867
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 1,
+      "method": "repulsion",
+      "mean_training_path_objective": 4.832652770596731,
+      "mean_straight_objective_same_metric": 7.034900323830651,
+      "validation_mse": 2.414077269404151,
+      "normalized_mse": 0.866711409173252,
+      "velocity_second_moment": 2.7853299770299746,
+      "mean_velocity_norm": 0.9307255649210684,
+      "mean_squared_spatial_jacobian": 6.807479640393878,
+      "path_seconds": 3.2645019000046887,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.006973305568850674,
+          "empirical_w2": 0.3753870371653312,
+          "outside_arc_0_2": 0.395,
+          "arc_side_fractions": [
+            0.425,
+            0.575
+          ],
+          "central_gap_fraction": 0.0025,
+          "trajectory_gaussian_potential": 0.13172805390155312
+        },
+        "50": {
+          "mmd_biased": 0.009171044504749148,
+          "empirical_w2": 0.3877226053771875,
+          "outside_arc_0_2": 0.3275,
+          "arc_side_fractions": [
+            0.4275,
+            0.5725
+          ],
+          "central_gap_fraction": 0.005,
+          "trajectory_gaussian_potential": 0.12891316081468784
+        },
+        "100": {
+          "mmd_biased": 0.009475436485860689,
+          "empirical_w2": 0.3899081424445198,
+          "outside_arc_0_2": 0.325,
+          "arc_side_fractions": [
+            0.4225,
+            0.5775
+          ],
+          "central_gap_fraction": 0.005,
+          "trajectory_gaussian_potential": 0.12866414366154533
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 2,
+      "method": "straight",
+      "mean_training_path_objective": 6.33786394319614,
+      "mean_straight_objective_same_metric": 6.33786394319614,
+      "validation_mse": 1.6026195985106382,
+      "normalized_mse": 0.7603116684787753,
+      "velocity_second_moment": 2.107845591423245,
+      "mean_velocity_norm": 0.9672071252949709,
+      "mean_squared_spatial_jacobian": 3.8315152546731555,
+      "path_seconds": 0.021986400010064244,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.010502854741250234,
+          "empirical_w2": 0.3399415896615756,
+          "outside_arc_0_2": 0.4,
+          "arc_side_fractions": [
+            0.5275,
+            0.4725
+          ],
+          "central_gap_fraction": 0.015,
+          "trajectory_gaussian_potential": 0.2875834304768776
+        },
+        "50": {
+          "mmd_biased": 0.006436425298038451,
+          "empirical_w2": 0.3005428911798134,
+          "outside_arc_0_2": 0.3625,
+          "arc_side_fractions": [
+            0.5125,
+            0.4875
+          ],
+          "central_gap_fraction": 0.015,
+          "trajectory_gaussian_potential": 0.2680755924633985
+        },
+        "100": {
+          "mmd_biased": 0.006227952562764871,
+          "empirical_w2": 0.2983711243541357,
+          "outside_arc_0_2": 0.36,
+          "arc_side_fractions": [
+            0.515,
+            0.485
+          ],
+          "central_gap_fraction": 0.015,
+          "trajectory_gaussian_potential": 0.2654597070011866
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 2,
+      "method": "zero",
+      "mean_training_path_objective": 6.33786394319614,
+      "mean_straight_objective_same_metric": 6.33786394319614,
+      "validation_mse": 1.6026195985106382,
+      "normalized_mse": 0.7603116684787753,
+      "velocity_second_moment": 2.107845591423245,
+      "mean_velocity_norm": 0.9672071252949709,
+      "mean_squared_spatial_jacobian": 3.8315152546731555,
+      "path_seconds": 0.021903700020629913,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.010502854741250234,
+          "empirical_w2": 0.3399415896615756,
+          "outside_arc_0_2": 0.4,
+          "arc_side_fractions": [
+            0.5275,
+            0.4725
+          ],
+          "central_gap_fraction": 0.015,
+          "trajectory_gaussian_potential": 0.2875834304768776
+        },
+        "50": {
+          "mmd_biased": 0.006436425298038451,
+          "empirical_w2": 0.3005428911798134,
+          "outside_arc_0_2": 0.3625,
+          "arc_side_fractions": [
+            0.5125,
+            0.4875
+          ],
+          "central_gap_fraction": 0.015,
+          "trajectory_gaussian_potential": 0.2680755924633985
+        },
+        "100": {
+          "mmd_biased": 0.006227952562764871,
+          "empirical_w2": 0.2983711243541357,
+          "outside_arc_0_2": 0.36,
+          "arc_side_fractions": [
+            0.515,
+            0.485
+          ],
+          "central_gap_fraction": 0.015,
+          "trajectory_gaussian_potential": 0.2654597070011866
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 2,
+      "method": "scalar",
+      "mean_training_path_objective": 4.271044071096756,
+      "mean_straight_objective_same_metric": 6.33786394319614,
+      "validation_mse": 2.541808404893985,
+      "normalized_mse": 0.8991647366720119,
+      "velocity_second_moment": 2.8268550814189233,
+      "mean_velocity_norm": 0.9732201082407366,
+      "mean_squared_spatial_jacobian": 8.46957760267183,
+      "path_seconds": 2.8995762999984436,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.007621049062472407,
+          "empirical_w2": 0.3562628017698917,
+          "outside_arc_0_2": 0.4175,
+          "arc_side_fractions": [
+            0.51,
+            0.49
+          ],
+          "central_gap_fraction": 0.02,
+          "trajectory_gaussian_potential": 0.1759898425099788
+        },
+        "50": {
+          "mmd_biased": 0.0057433606565238104,
+          "empirical_w2": 0.31902678756393726,
+          "outside_arc_0_2": 0.3825,
+          "arc_side_fractions": [
+            0.505,
+            0.495
+          ],
+          "central_gap_fraction": 0.02,
+          "trajectory_gaussian_potential": 0.17450196211062458
+        },
+        "100": {
+          "mmd_biased": 0.005660802056984826,
+          "empirical_w2": 0.3163033290661223,
+          "outside_arc_0_2": 0.3875,
+          "arc_side_fractions": [
+            0.5025,
+            0.4975
+          ],
+          "central_gap_fraction": 0.02,
+          "trajectory_gaussian_potential": 0.17431834795327625
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 2,
+      "method": "anisotropic",
+      "mean_training_path_objective": 3.0671824783359156,
+      "mean_straight_objective_same_metric": 4.516998237336426,
+      "validation_mse": 2.265350100414683,
+      "normalized_mse": 0.8353674778802898,
+      "velocity_second_moment": 2.711800687001743,
+      "mean_velocity_norm": 0.9893203105561256,
+      "mean_squared_spatial_jacobian": 6.266201125803932,
+      "path_seconds": 3.3992851999937557,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.009360510158078705,
+          "empirical_w2": 0.3411515292858831,
+          "outside_arc_0_2": 0.2925,
+          "arc_side_fractions": [
+            0.535,
+            0.465
+          ],
+          "central_gap_fraction": 0.01,
+          "trajectory_gaussian_potential": 0.1783534653950886
+        },
+        "50": {
+          "mmd_biased": 0.0072859779654559365,
+          "empirical_w2": 0.3062922873613208,
+          "outside_arc_0_2": 0.285,
+          "arc_side_fractions": [
+            0.5375,
+            0.4625
+          ],
+          "central_gap_fraction": 0.0075,
+          "trajectory_gaussian_potential": 0.17448236261712846
+        },
+        "100": {
+          "mmd_biased": 0.00729097608012208,
+          "empirical_w2": 0.30560241583105047,
+          "outside_arc_0_2": 0.285,
+          "arc_side_fractions": [
+            0.535,
+            0.465
+          ],
+          "central_gap_fraction": 0.0075,
+          "trajectory_gaussian_potential": 0.17391162657251802
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 2,
+      "method": "repulsion",
+      "mean_training_path_objective": 4.744081250622933,
+      "mean_straight_objective_same_metric": 7.097446484654791,
+      "validation_mse": 2.643825450432219,
+      "normalized_mse": 0.9015733612439586,
+      "velocity_second_moment": 2.932457372946738,
+      "mean_velocity_norm": 0.9801527445340483,
+      "mean_squared_spatial_jacobian": 9.057449790302112,
+      "path_seconds": 3.1130211999989115,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.00712495792840695,
+          "empirical_w2": 0.3547481241684851,
+          "outside_arc_0_2": 0.4025,
+          "arc_side_fractions": [
+            0.5025,
+            0.4975
+          ],
+          "central_gap_fraction": 0.02,
+          "trajectory_gaussian_potential": 0.15463043588404018
+        },
+        "50": {
+          "mmd_biased": 0.005968133324968816,
+          "empirical_w2": 0.3230721776746413,
+          "outside_arc_0_2": 0.3675,
+          "arc_side_fractions": [
+            0.5025,
+            0.4975
+          ],
+          "central_gap_fraction": 0.02,
+          "trajectory_gaussian_potential": 0.15545325456069067
+        },
+        "100": {
+          "mmd_biased": 0.0059223663777665525,
+          "empirical_w2": 0.32046706777770334,
+          "outside_arc_0_2": 0.3625,
+          "arc_side_fractions": [
+            0.5025,
+            0.4975
+          ],
+          "central_gap_fraction": 0.02,
+          "trajectory_gaussian_potential": 0.15560549596387221
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 3,
+      "method": "straight",
+      "mean_training_path_objective": 7.084179821132748,
+      "mean_straight_objective_same_metric": 7.084179821132748,
+      "validation_mse": 1.358487640739145,
+      "normalized_mse": 0.7866823693155082,
+      "velocity_second_moment": 1.7268565989614897,
+      "mean_velocity_norm": 0.9648929926755525,
+      "mean_squared_spatial_jacobian": 3.614405071610821,
+      "path_seconds": 0.026257399993482977,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.013701161540631723,
+          "empirical_w2": 0.4008745413768849,
+          "outside_arc_0_2": 0.385,
+          "arc_side_fractions": [
+            0.465,
+            0.535
+          ],
+          "central_gap_fraction": 0.015,
+          "trajectory_gaussian_potential": 0.32120740467658976
+        },
+        "50": {
+          "mmd_biased": 0.006154887410535492,
+          "empirical_w2": 0.3266666312040405,
+          "outside_arc_0_2": 0.3575,
+          "arc_side_fractions": [
+            0.4825,
+            0.5175
+          ],
+          "central_gap_fraction": 0.0125,
+          "trajectory_gaussian_potential": 0.29395137637930996
+        },
+        "100": {
+          "mmd_biased": 0.005498558030640144,
+          "empirical_w2": 0.3186679679229408,
+          "outside_arc_0_2": 0.35,
+          "arc_side_fractions": [
+            0.4825,
+            0.5175
+          ],
+          "central_gap_fraction": 0.0125,
+          "trajectory_gaussian_potential": 0.2903749689097102
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 3,
+      "method": "zero",
+      "mean_training_path_objective": 7.084179821132748,
+      "mean_straight_objective_same_metric": 7.084179821132748,
+      "validation_mse": 1.358487640739145,
+      "normalized_mse": 0.7866823693155082,
+      "velocity_second_moment": 1.7268565989614897,
+      "mean_velocity_norm": 0.9648929926755525,
+      "mean_squared_spatial_jacobian": 3.614405071610821,
+      "path_seconds": 0.024399899994023144,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.013701161540631723,
+          "empirical_w2": 0.4008745413768849,
+          "outside_arc_0_2": 0.385,
+          "arc_side_fractions": [
+            0.465,
+            0.535
+          ],
+          "central_gap_fraction": 0.015,
+          "trajectory_gaussian_potential": 0.32120740467658976
+        },
+        "50": {
+          "mmd_biased": 0.006154887410535492,
+          "empirical_w2": 0.3266666312040405,
+          "outside_arc_0_2": 0.3575,
+          "arc_side_fractions": [
+            0.4825,
+            0.5175
+          ],
+          "central_gap_fraction": 0.0125,
+          "trajectory_gaussian_potential": 0.29395137637930996
+        },
+        "100": {
+          "mmd_biased": 0.005498558030640144,
+          "empirical_w2": 0.3186679679229408,
+          "outside_arc_0_2": 0.35,
+          "arc_side_fractions": [
+            0.4825,
+            0.5175
+          ],
+          "central_gap_fraction": 0.0125,
+          "trajectory_gaussian_potential": 0.2903749689097102
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 3,
+      "method": "scalar",
+      "mean_training_path_objective": 4.76182276230262,
+      "mean_straight_objective_same_metric": 7.084179821132748,
+      "validation_mse": 2.1371813556521695,
+      "normalized_mse": 0.9025930553492286,
+      "velocity_second_moment": 2.36782384152652,
+      "mean_velocity_norm": 0.8116923014330303,
+      "mean_squared_spatial_jacobian": 6.605887869634919,
+      "path_seconds": 2.9653611999819987,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.009612272568621627,
+          "empirical_w2": 0.39410306850166765,
+          "outside_arc_0_2": 0.3775,
+          "arc_side_fractions": [
+            0.445,
+            0.555
+          ],
+          "central_gap_fraction": 0.0125,
+          "trajectory_gaussian_potential": 0.18450447244830698
+        },
+        "50": {
+          "mmd_biased": 0.005696538789871086,
+          "empirical_w2": 0.3484642065517947,
+          "outside_arc_0_2": 0.3775,
+          "arc_side_fractions": [
+            0.4325,
+            0.5675
+          ],
+          "central_gap_fraction": 0.005,
+          "trajectory_gaussian_potential": 0.1814204280565077
+        },
+        "100": {
+          "mmd_biased": 0.005333808390398875,
+          "empirical_w2": 0.3446036809578632,
+          "outside_arc_0_2": 0.3825,
+          "arc_side_fractions": [
+            0.4325,
+            0.5675
+          ],
+          "central_gap_fraction": 0.0075,
+          "trajectory_gaussian_potential": 0.18105272441630987
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 3,
+      "method": "anisotropic",
+      "mean_training_path_objective": 3.3107259516315857,
+      "mean_straight_objective_same_metric": 5.147334156579421,
+      "validation_mse": 1.87033361854635,
+      "normalized_mse": 0.8209223654847637,
+      "velocity_second_moment": 2.278331907112675,
+      "mean_velocity_norm": 0.9110609813179584,
+      "mean_squared_spatial_jacobian": 5.376936196848499,
+      "path_seconds": 3.463254899950698,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.008719769028092905,
+          "empirical_w2": 0.37232945147102287,
+          "outside_arc_0_2": 0.3075,
+          "arc_side_fractions": [
+            0.4725,
+            0.5275
+          ],
+          "central_gap_fraction": 0.0125,
+          "trajectory_gaussian_potential": 0.18316615145638465
+        },
+        "50": {
+          "mmd_biased": 0.0041914979373829375,
+          "empirical_w2": 0.3078709509936432,
+          "outside_arc_0_2": 0.3225,
+          "arc_side_fractions": [
+            0.4575,
+            0.5425
+          ],
+          "central_gap_fraction": 0.01,
+          "trajectory_gaussian_potential": 0.17797937878630266
+        },
+        "100": {
+          "mmd_biased": 0.0037846794715910015,
+          "empirical_w2": 0.3013899686448866,
+          "outside_arc_0_2": 0.32,
+          "arc_side_fractions": [
+            0.4575,
+            0.5425
+          ],
+          "central_gap_fraction": 0.01,
+          "trajectory_gaussian_potential": 0.17727569617959285
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 3,
+      "method": "repulsion",
+      "mean_training_path_objective": 5.251512779878436,
+      "mean_straight_objective_same_metric": 7.920291562176167,
+      "validation_mse": 2.2573068469502964,
+      "normalized_mse": 0.9068733131540728,
+      "velocity_second_moment": 2.489109354314843,
+      "mean_velocity_norm": 0.8169305622793904,
+      "mean_squared_spatial_jacobian": 7.324800068071307,
+      "path_seconds": 3.1641540999989957,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.007759422234192792,
+          "empirical_w2": 0.37818879042370546,
+          "outside_arc_0_2": 0.365,
+          "arc_side_fractions": [
+            0.435,
+            0.565
+          ],
+          "central_gap_fraction": 0.01,
+          "trajectory_gaussian_potential": 0.15810240293598027
+        },
+        "50": {
+          "mmd_biased": 0.005100453150241435,
+          "empirical_w2": 0.3441331478249421,
+          "outside_arc_0_2": 0.3675,
+          "arc_side_fractions": [
+            0.42,
+            0.58
+          ],
+          "central_gap_fraction": 0.01,
+          "trajectory_gaussian_potential": 0.15822873197864942
+        },
+        "100": {
+          "mmd_biased": 0.004856685024311247,
+          "empirical_w2": 0.3421234159470549,
+          "outside_arc_0_2": 0.38,
+          "arc_side_fractions": [
+            0.42,
+            0.58
+          ],
+          "central_gap_fraction": 0.01,
+          "trajectory_gaussian_potential": 0.1583247716101412
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 4,
+      "method": "straight",
+      "mean_training_path_objective": 7.382874286891387,
+      "mean_straight_objective_same_metric": 7.382874286891387,
+      "validation_mse": 1.435921305771142,
+      "normalized_mse": 0.7207407044755535,
+      "velocity_second_moment": 1.992285570739326,
+      "mean_velocity_norm": 1.0288269661388387,
+      "mean_squared_spatial_jacobian": 3.360524316670521,
+      "path_seconds": 0.021707199979573488,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.008484020737575815,
+          "empirical_w2": 0.3160580097509811,
+          "outside_arc_0_2": 0.41,
+          "arc_side_fractions": [
+            0.585,
+            0.415
+          ],
+          "central_gap_fraction": 0.015,
+          "trajectory_gaussian_potential": 0.2999046751266844
+        },
+        "50": {
+          "mmd_biased": 0.004570877003343465,
+          "empirical_w2": 0.2771565746309843,
+          "outside_arc_0_2": 0.41,
+          "arc_side_fractions": [
+            0.5775,
+            0.4225
+          ],
+          "central_gap_fraction": 0.0125,
+          "trajectory_gaussian_potential": 0.2715427158246846
+        },
+        "100": {
+          "mmd_biased": 0.004468599562222231,
+          "empirical_w2": 0.2767507816974639,
+          "outside_arc_0_2": 0.4075,
+          "arc_side_fractions": [
+            0.5725,
+            0.4275
+          ],
+          "central_gap_fraction": 0.0125,
+          "trajectory_gaussian_potential": 0.26800000254592304
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 4,
+      "method": "zero",
+      "mean_training_path_objective": 7.382874286891387,
+      "mean_straight_objective_same_metric": 7.382874286891387,
+      "validation_mse": 1.435921305771142,
+      "normalized_mse": 0.7207407044755535,
+      "velocity_second_moment": 1.992285570739326,
+      "mean_velocity_norm": 1.0288269661388387,
+      "mean_squared_spatial_jacobian": 3.360524316670521,
+      "path_seconds": 0.02142410003580153,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.008484020737575815,
+          "empirical_w2": 0.3160580097509811,
+          "outside_arc_0_2": 0.41,
+          "arc_side_fractions": [
+            0.585,
+            0.415
+          ],
+          "central_gap_fraction": 0.015,
+          "trajectory_gaussian_potential": 0.2999046751266844
+        },
+        "50": {
+          "mmd_biased": 0.004570877003343465,
+          "empirical_w2": 0.2771565746309843,
+          "outside_arc_0_2": 0.41,
+          "arc_side_fractions": [
+            0.5775,
+            0.4225
+          ],
+          "central_gap_fraction": 0.0125,
+          "trajectory_gaussian_potential": 0.2715427158246846
+        },
+        "100": {
+          "mmd_biased": 0.004468599562222231,
+          "empirical_w2": 0.2767507816974639,
+          "outside_arc_0_2": 0.4075,
+          "arc_side_fractions": [
+            0.5725,
+            0.4275
+          ],
+          "central_gap_fraction": 0.0125,
+          "trajectory_gaussian_potential": 0.26800000254592304
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 4,
+      "method": "scalar",
+      "mean_training_path_objective": 4.929530077875168,
+      "mean_straight_objective_same_metric": 7.382874286891387,
+      "validation_mse": 2.3311548332488083,
+      "normalized_mse": 0.8059285278348405,
+      "velocity_second_moment": 2.8925081477281243,
+      "mean_velocity_norm": 0.9475584839122194,
+      "mean_squared_spatial_jacobian": 9.025932738762348,
+      "path_seconds": 3.004706499981694,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.012689150333830668,
+          "empirical_w2": 0.39048406363124266,
+          "outside_arc_0_2": 0.455,
+          "arc_side_fractions": [
+            0.575,
+            0.425
+          ],
+          "central_gap_fraction": 0.01,
+          "trajectory_gaussian_potential": 0.185969278905104
+        },
+        "50": {
+          "mmd_biased": 0.007831890515220152,
+          "empirical_w2": 0.3307134860157889,
+          "outside_arc_0_2": 0.4075,
+          "arc_side_fractions": [
+            0.5575,
+            0.4425
+          ],
+          "central_gap_fraction": 0.01,
+          "trajectory_gaussian_potential": 0.17788632576851476
+        },
+        "100": {
+          "mmd_biased": 0.007452112731799909,
+          "empirical_w2": 0.32500824657875854,
+          "outside_arc_0_2": 0.4025,
+          "arc_side_fractions": [
+            0.555,
+            0.445
+          ],
+          "central_gap_fraction": 0.01,
+          "trajectory_gaussian_potential": 0.17691783717836684
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 4,
+      "method": "anisotropic",
+      "mean_training_path_objective": 3.4312837261940183,
+      "mean_straight_objective_same_metric": 5.533078041985085,
+      "validation_mse": 1.9605632636805532,
+      "normalized_mse": 0.7267788005524849,
+      "velocity_second_moment": 2.6976065650101053,
+      "mean_velocity_norm": 1.049629575513206,
+      "mean_squared_spatial_jacobian": 8.449439736674957,
+      "path_seconds": 3.447394200018607,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.015770403710759773,
+          "empirical_w2": 0.4064219305440114,
+          "outside_arc_0_2": 0.305,
+          "arc_side_fractions": [
+            0.6125,
+            0.3875
+          ],
+          "central_gap_fraction": 0.015,
+          "trajectory_gaussian_potential": 0.19208881106506615
+        },
+        "50": {
+          "mmd_biased": 0.009490998013268914,
+          "empirical_w2": 0.3308410480352786,
+          "outside_arc_0_2": 0.31,
+          "arc_side_fractions": [
+            0.595,
+            0.405
+          ],
+          "central_gap_fraction": 0.0125,
+          "trajectory_gaussian_potential": 0.18303148684229734
+        },
+        "100": {
+          "mmd_biased": 0.009053598608293134,
+          "empirical_w2": 0.3246498139905908,
+          "outside_arc_0_2": 0.305,
+          "arc_side_fractions": [
+            0.59,
+            0.41
+          ],
+          "central_gap_fraction": 0.01,
+          "trajectory_gaussian_potential": 0.18191792294266265
+        }
+      }
+    },
+    {
+      "dataset": "moons",
+      "seed": 4,
+      "method": "repulsion",
+      "mean_training_path_objective": 5.436909675232408,
+      "mean_straight_objective_same_metric": 8.22161912086838,
+      "validation_mse": 2.402330746044393,
+      "normalized_mse": 0.8162869074819279,
+      "velocity_second_moment": 2.942998012126734,
+      "mean_velocity_norm": 0.9325960703570609,
+      "mean_squared_spatial_jacobian": 10.199858866263167,
+      "path_seconds": 3.2555937999859452,
+      "sampling": {
+        "10": {
+          "mmd_biased": 0.011831650722416098,
+          "empirical_w2": 0.3845485070280561,
+          "outside_arc_0_2": 0.4325,
+          "arc_side_fractions": [
+            0.575,
+            0.425
+          ],
+          "central_gap_fraction": 0.0125,
+          "trajectory_gaussian_potential": 0.1641033773084186
+        },
+        "50": {
+          "mmd_biased": 0.008007609143019234,
+          "empirical_w2": 0.3327002553479404,
+          "outside_arc_0_2": 0.4,
+          "arc_side_fractions": [
+            0.5575,
+            0.4425
+          ],
+          "central_gap_fraction": 0.015,
+          "trajectory_gaussian_potential": 0.1591649943997185
+        },
+        "100": {
+          "mmd_biased": 0.007687238998747903,
+          "empirical_w2": 0.32745113796457564,
+          "outside_arc_0_2": 0.4,
+          "arc_side_fractions": [
+            0.5575,
+            0.4425
+          ],
+          "central_gap_fraction": 0.015,
+          "trajectory_gaussian_potential": 0.15863028786716588
+        }
+      }
+    }
+  ]
+}

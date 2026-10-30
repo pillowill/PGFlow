@@ -1,7 +1,7 @@
 """Compare CPU SciPy and GPU Torch paths on identical MP-20 validation CIFs."""
 import csv, json, os, sys, time
 from pathlib import Path
-root=Path(__file__).resolve().parents[1]; project=root/'CrystalFlow-project'; sys.path.insert(0,str(project)); os.environ['PROJECT_ROOT']=str(project)
+root=Path(__file__).resolve().parents[1]; project=root/'repos'/'CrystalFlow-project'; sys.path.insert(0,str(project)); os.environ['PROJECT_ROOT']=str(project)
 import numpy as np
 import torch
 from pymatgen.core import Structure

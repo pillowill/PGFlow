@@ -1,7 +1,7 @@
 """Small real-CIF CrystalFlow forward/backward integration check."""
 import csv, os, sys, time
 from pathlib import Path
-root=Path(__file__).resolve().parents[1]/'CrystalFlow-project'
+root=Path(__file__).resolve().parents[1]/'repos'/'CrystalFlow-project'
 os.environ['PROJECT_ROOT']=str(root); sys.path.insert(0,str(root))
 import torch
 from hydra import initialize_config_dir, compose

@@ -20,7 +20,7 @@ Run `python experiments/check_crystalflow_path.py` from the project root for end
 
 ### Current working copy and environment
 
-The current implementation and full local data are in `CrystalFlow-project/`, copied from the user-provided local CrystalFlow tree; it is not a verified upstream checkout. The previous `crystalflow-upstream/` section is retained as historical provenance, not the active working copy. `experiments/check_crystalflow_path.py` now targets `CrystalFlow-project/`. The AI4MatGen environment had lightning 2.6.6 installed during setup, but executing the check exposed an OpenMP runtime collision (`libomp.dll` and `libiomp5md.dll`); the integration has not yet passed checks in that environment. Full model forward and training remain unverified.
+The current implementation and full local data are in `repos/CrystalFlow-project/`, copied from the user-provided local CrystalFlow tree; it is not a verified upstream checkout. The previous `crystalflow-upstream/` section is retained as historical provenance, not the active working copy. `experiments/check_crystalflow_path.py` now targets `repos/CrystalFlow-project/`. The AI4MatGen environment had lightning 2.6.6 installed during setup, but executing the check exposed an OpenMP runtime collision (`libomp.dll` and `libiomp5md.dll`); the integration has not yet passed checks in that environment. Full model forward and training remain unverified.
 
 ### Environment repair update
 
@@ -31,7 +31,7 @@ AI4MatGen now uses the PyPI Windows wheels for NumPy 2.4.4 and SciPy 1.17.1 (sam
 
 The pandas Arrow crash was avoided by installing pandas 2.3.3 and pytz; NumPy 2.4.4, SciPy 1.17.1 and PyArrow 24.0.0 use PyPI Windows wheels. SwanLab and torchdyn were installed; protobuf changed to 6.33.6. `pip check` passes. A small CPU `fast_dev_run` completed one train and validation batch in each path mode (physical mode used maxiter=2 and small crystals). This does not validate GPU or long runs, nor unrelated projects sharing this environment.
 
-Run from `CrystalFlow-project`; `diffcsp/run.py` now places this repository first on the Python import path. The current PyTorch version defaults to safe weights-only loading, whereas CrystalFlow preprocessing caches contain Python/NumPy objects. For caches you created yourself and trust, set `TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD=1` only in the training process; never use that setting to load untrusted caches or checkpoints. Existing caches created by another `diffcsp` project are incompatible and should be regenerated in a separate directory.
+Run from `repos/CrystalFlow-project`; `diffcsp/run.py` now places this repository first on the Python import path. The current PyTorch version defaults to safe weights-only loading, whereas CrystalFlow preprocessing caches contain Python/NumPy objects. For caches you created yourself and trust, set `TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD=1` only in the training process; never use that setting to load untrusted caches or checkpoints. Existing caches created by another `diffcsp` project are incompatible and should be regenerated in a separate directory.
 
 ### Torch physical-path backend
 
@@ -43,4 +43,12 @@ Activate `conda activate pgflow`. The environment was cloned from AI4MatGen and 
 
 ### Repository and data
 
-The repository tracks the research proposal, source, scripts and lightweight experiment summaries. CrystalFlow datasets, pretrained weights, generated caches and training logs are excluded from Git. Obtain compatible datasets and weights from the [CrystalFlow project](https://github.com/ixsluo/CrystalFlow), then place them under `CrystalFlow-project/data/` and the relevant model directories. The copied CrystalFlow source retains its MIT license in `CrystalFlow-project/LICENSE`; the local source snapshot was supplied without Git history and is not claimed to match a verified upstream revision.
+The repository tracks the research proposal, source, scripts and lightweight experiment summaries. CrystalFlow datasets, pretrained weights, generated caches and training logs are excluded from Git. Obtain compatible datasets and weights from the [CrystalFlow project](https://github.com/ixsluo/CrystalFlow), then place them under `repos/CrystalFlow-project/data/` and the relevant model directories. The copied CrystalFlow source retains its MIT license in `repos/CrystalFlow-project/LICENSE`; the local source snapshot was supplied without Git history and is not claimed to match a verified upstream revision.
+
+### Toy experiment suite
+
+The runnable Toy-1–5 mechanism experiments are `toy/toy1_scan.py`, `toy/toy2_anisotropy.py` and `toy/toy2_periodic.py`, `toy/toy3_periodic_matching.py`, `toy/toy4_ablation.py` and `toy/toy4_strength_scan.py`, and `toy/toy5_periodic_particles.py`. Run them from the repository root in `pgflow`; Toy-5 uses CUDA if available. `toy/plot_toy1.py` generates the path/speed figure. Results are under `results/`; the proposal records experimental limitations and the initial unsuccessful Toy-5 solver settings. These are mechanism studies, not proof of CSP performance.
+
+### 8-ring and two moons
+
+Run `python toy/ring_moons.py` from the project root in `pgflow` (setting `OPENBLAS_NUM_THREADS=1` is recommended). It runs five paired seeds for straight, zero, scalar, fixed-axis anisotropic and repulsion paths, and writes `results/ring_moons.json` plus seed-0 plots. The Gaussian field is a fixed synthetic proxy, not a learned moon-normal metric; consult the proposal for results and limitations.

@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0,'CrystalFlow-project')
+sys.path.insert(0,'repos/CrystalFlow-project')
 import torch
 from diffcsp.pl_modules.physical_path import physical_path
 f=torch.tensor([[.1,.2,.3],[.7,.6,.8]],dtype=torch.float64)

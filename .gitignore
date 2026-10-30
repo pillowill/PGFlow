@@ -9,11 +9,11 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Datasets, generated caches, trained weights and run outputs
-CrystalFlow-project/data/
-CrystalFlow-project/diffcsp/prop_models/
-CrystalFlow-project/fig/
-CrystalFlow-project/hydra/
-CrystalFlow-project/log/
+repos/CrystalFlow-project/data/
+repos/CrystalFlow-project/diffcsp/prop_models/
+repos/CrystalFlow-project/fig/
+repos/CrystalFlow-project/hydra/
+repos/CrystalFlow-project/log/
 results/environment_smoke/
 wandb/
 swanlog/
@@ -29,3 +29,6 @@ swanlog/
 Thumbs.db
 .vscode/
 .idea/
+
+# Local third-party Meta source snapshot (installed separately)
+/repos/flow_matching-main/

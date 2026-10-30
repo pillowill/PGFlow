@@ -1,0 +1,74 @@
+[
+  {
+    "alpha": 0.0,
+    "dynamic": false,
+    "straight_action": 0.32400000000000007,
+    "optimized_action": 0.32400000000000007,
+    "max_deviation": 0.0,
+    "distance_range": [
+      0.5,
+      1.0295630140987
+    ],
+    "solver_success": true
+  },
+  {
+    "alpha": 0.0,
+    "dynamic": true,
+    "straight_action": 0.32400000000000007,
+    "optimized_action": 0.32400000000000007,
+    "max_deviation": 0.0,
+    "distance_range": [
+      0.5,
+      1.0295630140987
+    ],
+    "solver_success": true
+  },
+  {
+    "alpha": 1.0,
+    "dynamic": false,
+    "straight_action": 1.9440000000000002,
+    "optimized_action": 1.9440000000000002,
+    "max_deviation": 0.0,
+    "distance_range": [
+      0.5,
+      1.0295630140987
+    ],
+    "solver_success": true
+  },
+  {
+    "alpha": 1.0,
+    "dynamic": true,
+    "straight_action": 0.8034874332622053,
+    "optimized_action": 0.4371276612797347,
+    "max_deviation": 0.39500725268660775,
+    "distance_range": [
+      0.8950072526864793,
+      1.0295630140987
+    ],
+    "solver_success": true
+  },
+  {
+    "alpha": 5.0,
+    "dynamic": false,
+    "straight_action": 8.424,
+    "optimized_action": 8.424,
+    "max_deviation": 0.0,
+    "distance_range": [
+      0.5,
+      1.0295630140987
+    ],
+    "solver_success": true
+  },
+  {
+    "alpha": 5.0,
+    "dynamic": true,
+    "straight_action": 2.7214371663110257,
+    "optimized_action": 0.4681266013754585,
+    "max_deviation": 0.49371664122999925,
+    "distance_range": [
+      0.9937166412297551,
+      1.0295630140987
+    ],
+    "solver_success": true
+  }
+]

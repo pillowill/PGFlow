@@ -1,0 +1,566 @@
+[
+  {
+    "mean_velocity_norm": 2.01960016973772,
+    "mean_squared_spatial_jacobian": 6.871551842592371,
+    "seed": 0,
+    "method": "straight",
+    "mean_objective": 12.039877174795475,
+    "mean_straight_objective": 12.039877174795475,
+    "validation_objective": 11.544357819198963,
+    "validation_mse": 2.558622268692517,
+    "normalized_mse": 0.5015313176421322,
+    "path_seconds": 0.026216200029011816,
+    "sampling": {
+      "10": {
+        "empirical_w2": 1.0432408608760195,
+        "mmd_biased": 0.019720454628262607,
+        "quadrant_fractions": [
+          0.252,
+          0.18,
+          0.326,
+          0.242
+        ],
+        "trajectory_gaussian_potential": 0.12306248522312246
+      },
+      "50": {
+        "empirical_w2": 1.0569327126994394,
+        "mmd_biased": 0.013107950314723227,
+        "quadrant_fractions": [
+          0.254,
+          0.184,
+          0.318,
+          0.244
+        ],
+        "trajectory_gaussian_potential": 0.09781178756989357
+      },
+      "100": {
+        "empirical_w2": 1.0599738768051117,
+        "mmd_biased": 0.012510187306725817,
+        "quadrant_fractions": [
+          0.256,
+          0.184,
+          0.316,
+          0.244
+        ],
+        "trajectory_gaussian_potential": 0.09490454786558832
+      }
+    }
+  },
+  {
+    "mean_velocity_norm": 2.0699990795625554,
+    "mean_squared_spatial_jacobian": 12.960239211940348,
+    "seed": 0,
+    "method": "scalar",
+    "mean_objective": 7.873062989180876,
+    "mean_straight_objective": 12.039877174795475,
+    "validation_objective": 7.722364968903681,
+    "validation_mse": 3.775786747394371,
+    "normalized_mse": 0.6172113376028157,
+    "path_seconds": 3.3118684999644756,
+    "sampling": {
+      "10": {
+        "empirical_w2": 1.1610630284229122,
+        "mmd_biased": 0.025107563487604678,
+        "quadrant_fractions": [
+          0.232,
+          0.208,
+          0.37,
+          0.19
+        ],
+        "trajectory_gaussian_potential": 0.08090650423230708
+      },
+      "50": {
+        "empirical_w2": 1.1842328212383533,
+        "mmd_biased": 0.01796825876921415,
+        "quadrant_fractions": [
+          0.24,
+          0.204,
+          0.358,
+          0.198
+        ],
+        "trajectory_gaussian_potential": 0.0680512324953353
+      },
+      "100": {
+        "empirical_w2": 1.1885930276350607,
+        "mmd_biased": 0.017330440296308702,
+        "quadrant_fractions": [
+          0.242,
+          0.204,
+          0.356,
+          0.198
+        ],
+        "trajectory_gaussian_potential": 0.0664744844862311
+      }
+    }
+  },
+  {
+    "mean_velocity_norm": 2.11226427124185,
+    "mean_squared_spatial_jacobian": 11.3800909474029,
+    "seed": 0,
+    "method": "anisotropic",
+    "mean_objective": 6.329042568552812,
+    "mean_straight_objective": 8.795247386401591,
+    "validation_objective": 6.0958498786663124,
+    "validation_mse": 3.314726985253829,
+    "normalized_mse": 0.5873672785305305,
+    "path_seconds": 3.1774361999705434,
+    "sampling": {
+      "10": {
+        "empirical_w2": 0.905922143708674,
+        "mmd_biased": 0.01623320624664709,
+        "quadrant_fractions": [
+          0.256,
+          0.206,
+          0.314,
+          0.224
+        ],
+        "trajectory_gaussian_potential": 0.0934922633238077
+      },
+      "50": {
+        "empirical_w2": 0.8997010186152682,
+        "mmd_biased": 0.008637282265048729,
+        "quadrant_fractions": [
+          0.264,
+          0.204,
+          0.31,
+          0.222
+        ],
+        "trajectory_gaussian_potential": 0.07670996286240489
+      },
+      "100": {
+        "empirical_w2": 0.9014658762163605,
+        "mmd_biased": 0.008016719354294377,
+        "quadrant_fractions": [
+          0.266,
+          0.204,
+          0.308,
+          0.222
+        ],
+        "trajectory_gaussian_potential": 0.07466782781940282
+      }
+    }
+  },
+  {
+    "mean_velocity_norm": 2.0708950102654735,
+    "mean_squared_spatial_jacobian": 13.131028115869233,
+    "seed": 0,
+    "method": "repulsion",
+    "mean_objective": 8.021628136887733,
+    "mean_straight_objective": 12.348886730142906,
+    "validation_objective": 7.913361782249121,
+    "validation_mse": 3.8258127201095093,
+    "normalized_mse": 0.6247307319089753,
+    "path_seconds": 3.577160199987702,
+    "sampling": {
+      "10": {
+        "empirical_w2": 1.1447880524198633,
+        "mmd_biased": 0.024098335805043725,
+        "quadrant_fractions": [
+          0.228,
+          0.21,
+          0.372,
+          0.19
+        ],
+        "trajectory_gaussian_potential": 0.07732372375434539
+      },
+      "50": {
+        "empirical_w2": 1.1690422914897738,
+        "mmd_biased": 0.01734924237568075,
+        "quadrant_fractions": [
+          0.24,
+          0.206,
+          0.356,
+          0.198
+        ],
+        "trajectory_gaussian_potential": 0.06512239343007095
+      },
+      "100": {
+        "empirical_w2": 1.1734668840078395,
+        "mmd_biased": 0.01675117406881821,
+        "quadrant_fractions": [
+          0.24,
+          0.206,
+          0.358,
+          0.196
+        ],
+        "trajectory_gaussian_potential": 0.06362856645261825
+      }
+    }
+  },
+  {
+    "mean_velocity_norm": 1.8982686517404772,
+    "mean_squared_spatial_jacobian": 8.084311459634918,
+    "seed": 1,
+    "method": "straight",
+    "mean_objective": 11.028282759875063,
+    "mean_straight_objective": 11.028282759875063,
+    "validation_objective": 12.612989280120038,
+    "validation_mse": 2.9653973260486306,
+    "normalized_mse": 0.5750437680923245,
+    "path_seconds": 0.025230700033716857,
+    "sampling": {
+      "10": {
+        "empirical_w2": 1.1221754889804172,
+        "mmd_biased": 0.024481163201938827,
+        "quadrant_fractions": [
+          0.366,
+          0.19,
+          0.204,
+          0.24
+        ],
+        "trajectory_gaussian_potential": 0.12531318009622366
+      },
+      "50": {
+        "empirical_w2": 1.1718095196885814,
+        "mmd_biased": 0.022705058043948567,
+        "quadrant_fractions": [
+          0.368,
+          0.186,
+          0.204,
+          0.242
+        ],
+        "trajectory_gaussian_potential": 0.0988758099095087
+      },
+      "100": {
+        "empirical_w2": 1.1775685912968736,
+        "mmd_biased": 0.02257631792408188,
+        "quadrant_fractions": [
+          0.37,
+          0.188,
+          0.202,
+          0.24
+        ],
+        "trajectory_gaussian_potential": 0.09581958658767427
+      }
+    }
+  },
+  {
+    "mean_velocity_norm": 1.9687515433377802,
+    "mean_squared_spatial_jacobian": 9.730646627940615,
+    "seed": 1,
+    "method": "scalar",
+    "mean_objective": 7.294720384748817,
+    "mean_straight_objective": 11.028282759875063,
+    "validation_objective": 7.770634495106174,
+    "validation_mse": 4.005758085523071,
+    "normalized_mse": 0.6315225005529744,
+    "path_seconds": 3.212187900033314,
+    "sampling": {
+      "10": {
+        "empirical_w2": 1.1336357415322398,
+        "mmd_biased": 0.021401888539524627,
+        "quadrant_fractions": [
+          0.364,
+          0.218,
+          0.194,
+          0.224
+        ],
+        "trajectory_gaussian_potential": 0.09074701517927011
+      },
+      "50": {
+        "empirical_w2": 1.1747859856026277,
+        "mmd_biased": 0.020768087791942835,
+        "quadrant_fractions": [
+          0.37,
+          0.2,
+          0.196,
+          0.234
+        ],
+        "trajectory_gaussian_potential": 0.0759600105402163
+      },
+      "100": {
+        "empirical_w2": 1.1808790597284047,
+        "mmd_biased": 0.020751036826993863,
+        "quadrant_fractions": [
+          0.368,
+          0.2,
+          0.198,
+          0.234
+        ],
+        "trajectory_gaussian_potential": 0.07413953814976007
+      }
+    }
+  },
+  {
+    "mean_velocity_norm": 1.9928421553705453,
+    "mean_squared_spatial_jacobian": 11.623279258279318,
+    "seed": 1,
+    "method": "anisotropic",
+    "mean_objective": 5.755476472085426,
+    "mean_straight_objective": 7.912565250875675,
+    "validation_objective": 6.225389712370681,
+    "validation_mse": 3.3353597339034655,
+    "normalized_mse": 0.5724628532851462,
+    "path_seconds": 3.1875185999670066,
+    "sampling": {
+      "10": {
+        "empirical_w2": 1.197478688726944,
+        "mmd_biased": 0.02458616287366744,
+        "quadrant_fractions": [
+          0.378,
+          0.188,
+          0.2,
+          0.234
+        ],
+        "trajectory_gaussian_potential": 0.09872804562043971
+      },
+      "50": {
+        "empirical_w2": 1.2491910664815842,
+        "mmd_biased": 0.025255570920265147,
+        "quadrant_fractions": [
+          0.38,
+          0.182,
+          0.196,
+          0.242
+        ],
+        "trajectory_gaussian_potential": 0.07879709821070495
+      },
+      "100": {
+        "empirical_w2": 1.2560290033883283,
+        "mmd_biased": 0.025375569240304763,
+        "quadrant_fractions": [
+          0.38,
+          0.182,
+          0.196,
+          0.242
+        ],
+        "trajectory_gaussian_potential": 0.07642079134643512
+      }
+    }
+  },
+  {
+    "mean_velocity_norm": 1.9741573038223748,
+    "mean_squared_spatial_jacobian": 9.81010818274916,
+    "seed": 1,
+    "method": "repulsion",
+    "mean_objective": 7.480198011076518,
+    "mean_straight_objective": 11.339184565100993,
+    "validation_objective": 7.917885502507898,
+    "validation_mse": 4.055096770697995,
+    "normalized_mse": 0.6375324950366168,
+    "path_seconds": 3.691106700047385,
+    "sampling": {
+      "10": {
+        "empirical_w2": 1.131930375190528,
+        "mmd_biased": 0.02111849004541927,
+        "quadrant_fractions": [
+          0.366,
+          0.216,
+          0.194,
+          0.224
+        ],
+        "trajectory_gaussian_potential": 0.08664771656621034
+      },
+      "50": {
+        "empirical_w2": 1.1734032310421658,
+        "mmd_biased": 0.020669846587883955,
+        "quadrant_fractions": [
+          0.37,
+          0.2,
+          0.194,
+          0.236
+        ],
+        "trajectory_gaussian_potential": 0.0723550535934334
+      },
+      "100": {
+        "empirical_w2": 1.1795947890170078,
+        "mmd_biased": 0.020676954019974603,
+        "quadrant_fractions": [
+          0.368,
+          0.2,
+          0.196,
+          0.236
+        ],
+        "trajectory_gaussian_potential": 0.07059188498482577
+      }
+    }
+  },
+  {
+    "mean_velocity_norm": 1.8816157563286486,
+    "mean_squared_spatial_jacobian": 5.4810749459883255,
+    "seed": 2,
+    "method": "straight",
+    "mean_objective": 11.921197251575371,
+    "mean_straight_objective": 11.921197251575371,
+    "validation_objective": 11.439758453381206,
+    "validation_mse": 2.900500925185099,
+    "normalized_mse": 0.5564419061277788,
+    "path_seconds": 0.027113899996038526,
+    "sampling": {
+      "10": {
+        "empirical_w2": 1.3582305858880332,
+        "mmd_biased": 0.03531614518039278,
+        "quadrant_fractions": [
+          0.164,
+          0.34,
+          0.192,
+          0.304
+        ],
+        "trajectory_gaussian_potential": 0.14298986514134135
+      },
+      "50": {
+        "empirical_w2": 1.3713926897877164,
+        "mmd_biased": 0.028081523546851284,
+        "quadrant_fractions": [
+          0.166,
+          0.334,
+          0.196,
+          0.304
+        ],
+        "trajectory_gaussian_potential": 0.11140606057205522
+      },
+      "100": {
+        "empirical_w2": 1.3738583931376596,
+        "mmd_biased": 0.027468269975764736,
+        "quadrant_fractions": [
+          0.166,
+          0.334,
+          0.196,
+          0.304
+        ],
+        "trajectory_gaussian_potential": 0.10789227947733247
+      }
+    }
+  },
+  {
+    "mean_velocity_norm": 1.859595203082623,
+    "mean_squared_spatial_jacobian": 10.397658739860836,
+    "seed": 2,
+    "method": "scalar",
+    "mean_objective": 7.782887475948653,
+    "mean_straight_objective": 11.921197251575371,
+    "validation_objective": 7.593126402026699,
+    "validation_mse": 3.6976653782911617,
+    "normalized_mse": 0.622379283128225,
+    "path_seconds": 3.2159230999532156,
+    "sampling": {
+      "10": {
+        "empirical_w2": 1.2208130074006747,
+        "mmd_biased": 0.021150170893501907,
+        "quadrant_fractions": [
+          0.176,
+          0.298,
+          0.236,
+          0.29
+        ],
+        "trajectory_gaussian_potential": 0.0914717562659628
+      },
+      "50": {
+        "empirical_w2": 1.2851722011935744,
+        "mmd_biased": 0.017897928773519256,
+        "quadrant_fractions": [
+          0.178,
+          0.302,
+          0.232,
+          0.288
+        ],
+        "trajectory_gaussian_potential": 0.07575517049913595
+      },
+      "100": {
+        "empirical_w2": 1.2939150225623388,
+        "mmd_biased": 0.0177160071778778,
+        "quadrant_fractions": [
+          0.178,
+          0.302,
+          0.232,
+          0.288
+        ],
+        "trajectory_gaussian_potential": 0.07385960645488628
+      }
+    }
+  },
+  {
+    "mean_velocity_norm": 1.9541185094919717,
+    "mean_squared_spatial_jacobian": 9.230159713826447,
+    "seed": 2,
+    "method": "anisotropic",
+    "mean_objective": 6.182260837107603,
+    "mean_straight_objective": 8.478537119556952,
+    "validation_objective": 6.108773094733442,
+    "validation_mse": 3.3667018964546034,
+    "normalized_mse": 0.5885171827406155,
+    "path_seconds": 3.2187711999868043,
+    "sampling": {
+      "10": {
+        "empirical_w2": 1.5644174156207271,
+        "mmd_biased": 0.04062746618929408,
+        "quadrant_fractions": [
+          0.146,
+          0.32,
+          0.202,
+          0.332
+        ],
+        "trajectory_gaussian_potential": 0.10726988827139657
+      },
+      "50": {
+        "empirical_w2": 1.609620466279958,
+        "mmd_biased": 0.03584161504956729,
+        "quadrant_fractions": [
+          0.144,
+          0.32,
+          0.204,
+          0.332
+        ],
+        "trajectory_gaussian_potential": 0.08558195718844142
+      },
+      "100": {
+        "empirical_w2": 1.6160062707545526,
+        "mmd_biased": 0.03550314882955785,
+        "quadrant_fractions": [
+          0.142,
+          0.32,
+          0.206,
+          0.332
+        ],
+        "trajectory_gaussian_potential": 0.08304728160329487
+      }
+    }
+  },
+  {
+    "mean_velocity_norm": 1.8646951310679483,
+    "mean_squared_spatial_jacobian": 10.446683292305979,
+    "seed": 2,
+    "method": "repulsion",
+    "mean_objective": 7.9414951432661836,
+    "mean_straight_objective": 12.238891758068894,
+    "validation_objective": 7.756456461791174,
+    "validation_mse": 3.7573581239324785,
+    "normalized_mse": 0.6286524806755361,
+    "path_seconds": 3.561399500002153,
+    "sampling": {
+      "10": {
+        "empirical_w2": 1.2160883139982541,
+        "mmd_biased": 0.020566972020860108,
+        "quadrant_fractions": [
+          0.18,
+          0.298,
+          0.234,
+          0.288
+        ],
+        "trajectory_gaussian_potential": 0.08736346242586321
+      },
+      "50": {
+        "empirical_w2": 1.2751746558784534,
+        "mmd_biased": 0.017617552370022327,
+        "quadrant_fractions": [
+          0.178,
+          0.302,
+          0.23,
+          0.29
+        ],
+        "trajectory_gaussian_potential": 0.07238094562207914
+      },
+      "100": {
+        "empirical_w2": 1.2832500177216073,
+        "mmd_biased": 0.01746106398566788,
+        "quadrant_fractions": [
+          0.178,
+          0.302,
+          0.23,
+          0.29
+        ],
+        "trajectory_gaussian_potential": 0.07056922766000277
+      }
+    }
+  }
+]
