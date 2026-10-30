@@ -52,3 +52,5 @@ The runnable Toy-1–5 mechanism experiments are `toy/toy1_scan.py`, `toy/toy2_a
 ### 8-ring and two moons
 
 Run `python toy/ring_moons.py` from the project root in `pgflow` (setting `OPENBLAS_NUM_THREADS=1` is recommended). It runs five paired seeds for straight, zero, scalar, fixed-axis anisotropic and repulsion paths, and writes `results/ring_moons.json` plus seed-0 plots. The Gaussian field is a fixed synthetic proxy, not a learned moon-normal metric; consult the proposal for results and limitations.
+
+Run `python toy/toy4_fair_regularized.py` for the strict paired Toy-4 check. Each seed fixes endpoint pairs, time samples, random Fourier basis, ridge model and inference source/target across Straight, PG and regularized PG. The regularized path adds deviation-from-line, curvature and velocity-smoothing penalties; it writes `results/toy4_fair_regularized.json`. The included quick run uses 2 seeds and 20/10 endpoint pairs as a mechanism test, so it is not a final statistical claim.

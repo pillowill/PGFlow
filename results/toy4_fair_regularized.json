@@ -1,0 +1,164 @@
+[
+  {
+    "seed": 0,
+    "config": {
+      "train_pairs": 20,
+      "validation_pairs": 10,
+      "repeats": 4,
+      "segments": 8,
+      "beta": 10.0,
+      "sigma": 0.5,
+      "regularizers": {
+        "dev": 0.08,
+        "curvature": 0.04,
+        "velocity": 0.04
+      }
+    },
+    "results": [
+      {
+        "method": "straight",
+        "validation_mse": 4.491333628445128,
+        "normalized_mse": 0.6758791023077702,
+        "mmd_biased": 0.15005310207957206,
+        "empirical_w2": 2.611629897444286,
+        "mean_velocity_norm": 2.42240422360441,
+        "mean_squared_spatial_jacobian": 14.027177677919132,
+        "mean_scalar_action": 11.21125180387167,
+        "mean_validation_scalar_action": 18.0465315086067,
+        "mean_path_regularizers": {
+          "dev": 0.0,
+          "curvature": 7.676240884235275e-32,
+          "velocity": 7.638238159439778e-32
+        },
+        "mean_validation_path_regularizers": {
+          "dev": 0.0,
+          "curvature": 7.322935914258668e-32,
+          "velocity": 7.325136977052253e-32
+        }
+      },
+      {
+        "method": "pg",
+        "validation_mse": 9.00572614214353,
+        "normalized_mse": 1.0144040822183342,
+        "mmd_biased": 0.125516871009338,
+        "empirical_w2": 3.0655880420662407,
+        "mean_velocity_norm": 2.654759000519409,
+        "mean_squared_spatial_jacobian": 28.08213580107099,
+        "mean_scalar_action": 7.642572941533483,
+        "mean_validation_scalar_action": 9.97280401023667,
+        "mean_path_regularizers": {
+          "dev": 0.172705289127586,
+          "curvature": 0.007912304983418529,
+          "velocity": 0.007912304983418529
+        },
+        "mean_validation_path_regularizers": {
+          "dev": 0.28879650118261685,
+          "curvature": 0.012532613901662104,
+          "velocity": 0.0125326139016621
+        }
+      },
+      {
+        "method": "pg_regularized",
+        "validation_mse": 8.959039652212642,
+        "normalized_mse": 1.011487312997271,
+        "mmd_biased": 0.12574771102230292,
+        "empirical_w2": 3.062311469485783,
+        "mean_velocity_norm": 2.655162143558245,
+        "mean_squared_spatial_jacobian": 28.01516407365849,
+        "mean_scalar_action": 7.656634641149218,
+        "mean_validation_scalar_action": 9.99684199476022,
+        "mean_path_regularizers": {
+          "dev": 0.17070171097987033,
+          "curvature": 0.007859050416713604,
+          "velocity": 0.007859050416713602
+        },
+        "mean_validation_path_regularizers": {
+          "dev": 0.2862089759944911,
+          "curvature": 0.012474520955871902,
+          "velocity": 0.012474520955871902
+        }
+      }
+    ]
+  },
+  {
+    "seed": 1,
+    "config": {
+      "train_pairs": 20,
+      "validation_pairs": 10,
+      "repeats": 4,
+      "segments": 8,
+      "beta": 10.0,
+      "sigma": 0.5,
+      "regularizers": {
+        "dev": 0.08,
+        "curvature": 0.04,
+        "velocity": 0.04
+      }
+    },
+    "results": [
+      {
+        "method": "straight",
+        "validation_mse": 2.864315291934875,
+        "normalized_mse": 0.7508343514356474,
+        "mmd_biased": 0.06031384648053839,
+        "empirical_w2": 2.0258049610434203,
+        "mean_velocity_norm": 1.9906489134008338,
+        "mean_squared_spatial_jacobian": 11.634127484549293,
+        "mean_scalar_action": 11.801385105697538,
+        "mean_validation_scalar_action": 7.39069842032621,
+        "mean_path_regularizers": {
+          "dev": 0.0,
+          "curvature": 9.036714787684881e-32,
+          "velocity": 8.959976366987818e-32
+        },
+        "mean_validation_path_regularizers": {
+          "dev": 0.0,
+          "curvature": 6.360589990975745e-32,
+          "velocity": 6.309346497812585e-32
+        }
+      },
+      {
+        "method": "pg",
+        "validation_mse": 4.118024246579905,
+        "normalized_mse": 1.1501910940751834,
+        "mmd_biased": 0.05929635561715124,
+        "empirical_w2": 1.9605389521911627,
+        "mean_velocity_norm": 2.3616256438539684,
+        "mean_squared_spatial_jacobian": 20.665813501410952,
+        "mean_scalar_action": 8.190519561413558,
+        "mean_validation_scalar_action": 6.035769051950497,
+        "mean_path_regularizers": {
+          "dev": 0.20451540481731434,
+          "curvature": 0.009372436589080284,
+          "velocity": 0.009372436589080284
+        },
+        "mean_validation_path_regularizers": {
+          "dev": 0.07094674201184785,
+          "curvature": 0.0042215115510991115,
+          "velocity": 0.004221511551099111
+        }
+      },
+      {
+        "method": "pg_regularized",
+        "validation_mse": 4.100340490691646,
+        "normalized_mse": 1.1378224824899432,
+        "mmd_biased": 0.05928902939160774,
+        "empirical_w2": 1.9594197708774341,
+        "mean_velocity_norm": 2.3591827715322267,
+        "mean_squared_spatial_jacobian": 20.57386497776209,
+        "mean_scalar_action": 8.207122198044534,
+        "mean_validation_scalar_action": 6.040394952609856,
+        "mean_path_regularizers": {
+          "dev": 0.20195536550071663,
+          "curvature": 0.009250265413012075,
+          "velocity": 0.009250265413012075
+        },
+        "mean_validation_path_regularizers": {
+          "dev": 0.06844049350963254,
+          "curvature": 0.004044308419546617,
+          "velocity": 0.004044308419546617
+        }
+      }
+    ]
+  }
+]
