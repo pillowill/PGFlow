@@ -1,0 +1,31 @@
+# Local environments, secrets, Python caches
+.env
+.env.*
+!.env.template
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Datasets, generated caches, trained weights and run outputs
+CrystalFlow-project/data/
+CrystalFlow-project/diffcsp/prop_models/
+CrystalFlow-project/fig/
+CrystalFlow-project/hydra/
+CrystalFlow-project/log/
+results/environment_smoke/
+wandb/
+swanlog/
+*.ckpt
+*.pt
+*.pth
+*.pkl
+*.npy
+*.npz
+
+# Platform/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,13 @@
+defaults:
+  - flow_polar
+  - _self_
+
+source:
+  type: prototype
+  _target_: diffcsp.pl_modules.prototype_source.PrototypeSource
+  bank_path: ${oc.env:PROJECT_ROOT}/data/mpts_52/prototype_bank.pt
+  lattice_polar_flag: true
+  sigma_l: 0.05
+  sigma_x: 0.02
+  q_smoothing: 1.0
+  fallback: gaussian

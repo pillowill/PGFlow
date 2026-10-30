@@ -1,0 +1,50 @@
+[
+  {
+    "seed": 0,
+    "amplitude": 0.0,
+    "validation_mse": 2.605909506342338,
+    "target_velocity_second_moment": 4.985816731208364,
+    "normalized_mse": 0.5226645195421712,
+    "mmd_biased": 0.008698207205424746
+  },
+  {
+    "seed": 0,
+    "amplitude": 0.5,
+    "validation_mse": 4.778865172533088,
+    "target_velocity_second_moment": 11.193491315248437,
+    "normalized_mse": 0.4269324947814124,
+    "mmd_biased": 0.009767571050226076
+  },
+  {
+    "seed": 1,
+    "amplitude": 0.0,
+    "validation_mse": 2.463329772192292,
+    "target_velocity_second_moment": 4.848623115883948,
+    "normalized_mse": 0.508047277199685,
+    "mmd_biased": 0.004060610968595724
+  },
+  {
+    "seed": 1,
+    "amplitude": 0.5,
+    "validation_mse": 4.5784329409966835,
+    "target_velocity_second_moment": 10.896121773705731,
+    "normalized_mse": 0.4201892229256516,
+    "mmd_biased": 0.007461484646054728
+  },
+  {
+    "seed": 2,
+    "amplitude": 0.0,
+    "validation_mse": 2.540105652157982,
+    "target_velocity_second_moment": 5.07131983807073,
+    "normalized_mse": 0.5008766422281715,
+    "mmd_biased": 0.005367209193848921
+  },
+  {
+    "seed": 2,
+    "amplitude": 0.5,
+    "validation_mse": 4.235482276115807,
+    "target_velocity_second_moment": 11.02991052203038,
+    "normalized_mse": 0.38399969497994996,
+    "mmd_biased": 0.01092599682771167
+  }
+]

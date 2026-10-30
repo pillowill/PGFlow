@@ -1,0 +1,134 @@
+[
+  {
+    "seed": 0,
+    "beta": 0.0,
+    "mean_action": 5.157424762858129,
+    "straight_action": 5.157424762858129,
+    "validation_mse": 2.694714804852049,
+    "normalized_mse": 0.5266724129637722,
+    "knn_velocity_variance_proxy": 2.778877389329549,
+    "mmd_biased": 0.0063891629918994,
+    "path_seconds": 0.7502033999771811
+  },
+  {
+    "seed": 0,
+    "beta": 1.0,
+    "mean_action": 5.678544765026206,
+    "straight_action": 5.812975406906293,
+    "validation_mse": 2.7627885471496723,
+    "normalized_mse": 0.5296861689933516,
+    "knn_velocity_variance_proxy": 2.9014248864795977,
+    "mmd_biased": 0.007477887875928402,
+    "path_seconds": 4.905425800010562
+  },
+  {
+    "seed": 0,
+    "beta": 3.0,
+    "mean_action": 6.330936046583351,
+    "straight_action": 7.124076695002621,
+    "validation_mse": 3.0574465374494992,
+    "normalized_mse": 0.5576819217504833,
+    "knn_velocity_variance_proxy": 3.189794491385352,
+    "mmd_biased": 0.00902051320224223,
+    "path_seconds": 5.407310800044797
+  },
+  {
+    "seed": 0,
+    "beta": 10.0,
+    "mean_action": 7.68937154229779,
+    "straight_action": 11.712931203339766,
+    "validation_mse": 3.6532676425900497,
+    "normalized_mse": 0.597800833497064,
+    "knn_velocity_variance_proxy": 3.7925018479056827,
+    "mmd_biased": 0.011110502241337694,
+    "path_seconds": 6.562096900015604
+  },
+  {
+    "seed": 1,
+    "beta": 0.0,
+    "mean_action": 4.821444142443848,
+    "straight_action": 4.821444142443848,
+    "validation_mse": 2.442348038769099,
+    "normalized_mse": 0.5220996213498528,
+    "knn_velocity_variance_proxy": 2.3546057143390766,
+    "mmd_biased": 0.005858787838261825,
+    "path_seconds": 0.7466449000057764
+  },
+  {
+    "seed": 1,
+    "beta": 1.0,
+    "mean_action": 5.309037357126723,
+    "straight_action": 5.4321622409975845,
+    "validation_mse": 2.5645250081527853,
+    "normalized_mse": 0.5369329471291086,
+    "knn_velocity_variance_proxy": 2.4737257486056867,
+    "mmd_biased": 0.004334695281946799,
+    "path_seconds": 4.819127599999774
+  },
+  {
+    "seed": 1,
+    "beta": 3.0,
+    "mean_action": 5.921396096250594,
+    "straight_action": 6.653598438105056,
+    "validation_mse": 2.8214932987851875,
+    "normalized_mse": 0.5629641099255188,
+    "knn_velocity_variance_proxy": 2.725677110832783,
+    "mmd_biased": 0.004154278191808969,
+    "path_seconds": 5.380007500003558
+  },
+  {
+    "seed": 1,
+    "beta": 10.0,
+    "mean_action": 7.194953186017315,
+    "straight_action": 10.928625127981206,
+    "validation_mse": 3.3184516011858216,
+    "normalized_mse": 0.597472342739186,
+    "knn_velocity_variance_proxy": 3.2601496349357326,
+    "mmd_biased": 0.0036248502104352376,
+    "path_seconds": 6.2615181999863125
+  },
+  {
+    "seed": 2,
+    "beta": 0.0,
+    "mean_action": 5.286613305830952,
+    "straight_action": 5.286613305830952,
+    "validation_mse": 2.8839085569068312,
+    "normalized_mse": 0.5729945126440916,
+    "knn_velocity_variance_proxy": 2.950219545234973,
+    "mmd_biased": 0.005340320748443761,
+    "path_seconds": 0.7457084000343457
+  },
+  {
+    "seed": 2,
+    "beta": 1.0,
+    "mean_action": 5.84351128804375,
+    "straight_action": 5.99314677467332,
+    "validation_mse": 2.9582121813342614,
+    "normalized_mse": 0.5833101898524281,
+    "knn_velocity_variance_proxy": 2.9676855311346055,
+    "mmd_biased": 0.0033280035096877048,
+    "path_seconds": 4.8011018999968655
+  },
+  {
+    "seed": 2,
+    "beta": 3.0,
+    "mean_action": 6.523592543200716,
+    "straight_action": 7.406213712358056,
+    "validation_mse": 3.1418605109989652,
+    "normalized_mse": 0.5942602497419485,
+    "knn_velocity_variance_proxy": 3.1548464105022074,
+    "mmd_biased": 0.004687690731592309,
+    "path_seconds": 5.413919699960388
+  },
+  {
+    "seed": 2,
+    "beta": 10.0,
+    "mean_action": 7.905093106813735,
+    "straight_action": 12.351947994254632,
+    "validation_mse": 3.555587366839527,
+    "normalized_mse": 0.6137055084732131,
+    "knn_velocity_variance_proxy": 3.6136823017252393,
+    "mmd_biased": 0.008867553611834,
+    "path_seconds": 6.304282400000375
+  }
+]

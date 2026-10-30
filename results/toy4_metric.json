@@ -1,0 +1,122 @@
+[
+  {
+    "seed": 0,
+    "train_pairs": 500,
+    "validation_pairs": 200,
+    "samples_per_pair": 4,
+    "segments": 12,
+    "beta": 10.0,
+    "sigma": 0.5,
+    "path_seconds": 6.486134500009939,
+    "mean_metric_action": 7.68937154229779,
+    "mean_straight_action": 11.712931203339766,
+    "fraction_optimized": 0.984,
+    "selected_solver_success_fraction": 1.0,
+    "validation_mean_metric_action": 7.6072047197357255,
+    "validation_mean_straight_action": 11.649285058355272,
+    "results": [
+      {
+        "method": "straight",
+        "validation_mse": 2.694714804852042,
+        "velocity_second_moment": 5.116491273366794,
+        "normalized_mse": 0.5266724129637467,
+        "mmd_biased": {
+          "10": 0.006660792507257651,
+          "50": 0.006389162991897235,
+          "100": 0.006477673905172232
+        }
+      },
+      {
+        "method": "metric",
+        "validation_mse": 3.6532676425900497,
+        "velocity_second_moment": 6.111178569656497,
+        "normalized_mse": 0.597800833497064,
+        "mmd_biased": {
+          "10": 0.011114020623605225,
+          "50": 0.011110502241337694,
+          "100": 0.011245727446252074
+        }
+      }
+    ]
+  },
+  {
+    "seed": 1,
+    "train_pairs": 500,
+    "validation_pairs": 200,
+    "samples_per_pair": 4,
+    "segments": 12,
+    "beta": 10.0,
+    "sigma": 0.5,
+    "path_seconds": 6.45587850001175,
+    "mean_metric_action": 7.194953186017315,
+    "mean_straight_action": 10.928625127981206,
+    "fraction_optimized": 0.98,
+    "selected_solver_success_fraction": 1.0,
+    "validation_mean_metric_action": 6.759209121179953,
+    "validation_mean_straight_action": 10.029347860982382,
+    "results": [
+      {
+        "method": "straight",
+        "validation_mse": 2.4423480387690093,
+        "velocity_second_moment": 4.6779348976633575,
+        "normalized_mse": 0.5220996213497904,
+        "mmd_biased": {
+          "10": 0.010933477219690735,
+          "50": 0.005858787838261492,
+          "100": 0.005449949508317287
+        }
+      },
+      {
+        "method": "metric",
+        "validation_mse": 3.3184516011858216,
+        "velocity_second_moment": 5.554150985419624,
+        "normalized_mse": 0.597472342739186,
+        "mmd_biased": {
+          "10": 0.005802103329677233,
+          "50": 0.0036248502104352376,
+          "100": 0.0035348617128019844
+        }
+      }
+    ]
+  },
+  {
+    "seed": 2,
+    "train_pairs": 500,
+    "validation_pairs": 200,
+    "samples_per_pair": 4,
+    "segments": 12,
+    "beta": 10.0,
+    "sigma": 0.5,
+    "path_seconds": 6.332746699976269,
+    "mean_metric_action": 7.905093106813735,
+    "mean_straight_action": 12.351947994254632,
+    "fraction_optimized": 0.976,
+    "selected_solver_success_fraction": 1.0,
+    "validation_mean_metric_action": 7.251535929762042,
+    "validation_mean_straight_action": 10.623751027954135,
+    "results": [
+      {
+        "method": "straight",
+        "validation_mse": 2.883908556906777,
+        "velocity_second_moment": 5.0330474258799685,
+        "normalized_mse": 0.5729945126441085,
+        "mmd_biased": {
+          "10": 0.008975929830041196,
+          "50": 0.005340320748450145,
+          "100": 0.005184756791839329
+        }
+      },
+      {
+        "method": "metric",
+        "validation_mse": 3.555587366839527,
+        "velocity_second_moment": 5.79363769389194,
+        "normalized_mse": 0.6137055084732131,
+        "mmd_biased": {
+          "10": 0.009904164903514479,
+          "50": 0.008867553611834,
+          "100": 0.008903974881897425
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "gpu": "NVIDIA GeForce RTX 2080 Ti",
+  "dtype": "float64",
+  "scipy_maxiter": 1,
+  "torch_steps": 10,
+  "note": "different optimizers and convergence; timing alone does not establish equal solution quality",
+  "cases": [
+    {
+      "id": "mp-865981",
+      "atoms": 4,
+      "straight_action": 11.410528797040767,
+      "results": {
+        "scipy": {
+          "seconds": 0.07278420001966879,
+          "position_norm": 1.3918077187203772,
+          "velocity_norm": 0.9100969971340364,
+          "action": 11.133179269096411
+        },
+        "torch": {
+          "seconds": 0.05794139998033643,
+          "position_norm": 1.3951111313798268,
+          "velocity_norm": 0.9012423736364376,
+          "action": 11.392224000667923
+        }
+      }
+    },
+    {
+      "id": "mp-1103778",
+      "atoms": 14,
+      "straight_action": 127.02101246279163,
+      "results": {
+        "scipy": {
+          "seconds": 3.1487641999847256,
+          "position_norm": 4.082596172865721,
+          "velocity_norm": 1.9965470931215412,
+          "action": 123.37131568011625
+        },
+        "torch": {
+          "seconds": 0.0595593000180088,
+          "position_norm": 4.110270642703135,
+          "velocity_norm": 2.292255583775345,
+          "action": 113.52401014286035
+        }
+      }
+    },
+    {
+      "id": "mp-39712",
+      "atoms": 20,
+      "straight_action": 443.90985544010346,
+      "results": {
+        "scipy": {
+          "seconds": 11.87570199999027,
+          "position_norm": 4.542792033249044,
+          "velocity_norm": 2.2952783536084107,
+          "action": 420.002279468727
+        },
+        "torch": {
+          "seconds": 0.0622581000206992,
+          "position_norm": 4.615132135167255,
+          "velocity_norm": 2.839606163661673,
+          "action": 335.30928113568535
+        }
+      }
+    },
+    {
+      "id": "mp-20332",
+      "atoms": 9,
+      "straight_action": 81.1877421156195,
+      "results": {
+        "scipy": {
+          "seconds": 0.7570880000130273,
+          "position_norm": 2.848195977273842,
+          "velocity_norm": 1.7747363460593781,
+          "action": 76.98003541166116
+        },
+        "torch": {
+          "seconds": 0.06218459998490289,
+          "position_norm": 2.8666068510687586,
+          "velocity_norm": 2.034056996273735,
+          "action": 74.8818767043411
+        }
+      }
+    }
+  ]
+}
