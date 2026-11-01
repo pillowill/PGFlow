@@ -1,0 +1,323 @@
+[
+  {
+    "seed": 0,
+    "config": {
+      "path": "straight FM only",
+      "endpoint_estimator": "x_t + (1-t) v_theta",
+      "surrogate": "frozen analytic anisotropic target-well energy/force/Hessian",
+      "time_power": 2,
+      "lambda_force": 0.8,
+      "lambda_hessian": 1.5,
+      "train_pairs": 192,
+      "validation_pairs": 96,
+      "mlp": "3-32-32-2 SiLU, 350 full-batch updates",
+      "device": "cuda"
+    },
+    "results": [
+      {
+        "method": "fm",
+        "validation_mse": 0.03216354176402092,
+        "normalized_mse": 0.0051337978802621365,
+        "one_step_force_residual": 1.9109665155410767,
+        "one_step_hessian_residual": 3.514068365097046,
+        "sampling": {
+          "5": {
+            "mmd_biased": 0.10310101509094238,
+            "empirical_w2": 0.19718756159043418,
+            "endpoint_energy": 0.43310484290122986,
+            "endpoint_force_rms": 3.439422369003296,
+            "endpoint_hessian_to_target_rms": 5.855101108551025
+          },
+          "20": {
+            "mmd_biased": 0.012847900390625,
+            "empirical_w2": 0.09300302405760663,
+            "endpoint_energy": 0.26731589436531067,
+            "endpoint_force_rms": 3.205519199371338,
+            "endpoint_hessian_to_target_rms": 4.5129194259643555
+          },
+          "100": {
+            "mmd_biased": 0.00434267520904541,
+            "empirical_w2": 0.07439056416489316,
+            "endpoint_energy": 0.25572511553764343,
+            "endpoint_force_rms": 3.21433687210083,
+            "endpoint_hessian_to_target_rms": 4.45418643951416
+          }
+        }
+      },
+      {
+        "method": "force",
+        "validation_mse": 0.03228725492954254,
+        "normalized_mse": 0.005153544247150421,
+        "one_step_force_residual": 1.9122192859649658,
+        "one_step_hessian_residual": 3.5368599891662598,
+        "sampling": {
+          "5": {
+            "mmd_biased": 0.10395228862762451,
+            "empirical_w2": 0.18869096999654822,
+            "endpoint_energy": 0.4193613827228546,
+            "endpoint_force_rms": 3.310210704803467,
+            "endpoint_hessian_to_target_rms": 5.827744483947754
+          },
+          "20": {
+            "mmd_biased": 0.012310028076171875,
+            "empirical_w2": 0.08126074710899789,
+            "endpoint_energy": 0.24598759412765503,
+            "endpoint_force_rms": 3.0081589221954346,
+            "endpoint_hessian_to_target_rms": 4.4418768882751465
+          },
+          "100": {
+            "mmd_biased": 0.0036382675170898438,
+            "empirical_w2": 0.062006937197461844,
+            "endpoint_energy": 0.2331164926290512,
+            "endpoint_force_rms": 3.013190984725952,
+            "endpoint_hessian_to_target_rms": 4.327273368835449
+          }
+        }
+      },
+      {
+        "method": "hessian",
+        "validation_mse": 0.032200850546360016,
+        "normalized_mse": 0.005139752756804228,
+        "one_step_force_residual": 1.9138314723968506,
+        "one_step_hessian_residual": 3.515871524810791,
+        "sampling": {
+          "5": {
+            "mmd_biased": 0.11203908920288086,
+            "empirical_w2": 0.18759648111384958,
+            "endpoint_energy": 0.449196994304657,
+            "endpoint_force_rms": 3.4676716327667236,
+            "endpoint_hessian_to_target_rms": 6.125102519989014
+          },
+          "20": {
+            "mmd_biased": 0.01580226421356201,
+            "empirical_w2": 0.0827581619994248,
+            "endpoint_energy": 0.2693248987197876,
+            "endpoint_force_rms": 3.1941730976104736,
+            "endpoint_hessian_to_target_rms": 4.764288425445557
+          },
+          "100": {
+            "mmd_biased": 0.005620837211608887,
+            "empirical_w2": 0.06485693443288947,
+            "endpoint_energy": 0.25380393862724304,
+            "endpoint_force_rms": 3.191835641860962,
+            "endpoint_hessian_to_target_rms": 4.689463138580322
+          }
+        }
+      }
+    ]
+  },
+  {
+    "seed": 1,
+    "config": {
+      "path": "straight FM only",
+      "endpoint_estimator": "x_t + (1-t) v_theta",
+      "surrogate": "frozen analytic anisotropic target-well energy/force/Hessian",
+      "time_power": 2,
+      "lambda_force": 0.8,
+      "lambda_hessian": 1.5,
+      "train_pairs": 192,
+      "validation_pairs": 96,
+      "mlp": "3-32-32-2 SiLU, 350 full-batch updates",
+      "device": "cuda"
+    },
+    "results": [
+      {
+        "method": "fm",
+        "validation_mse": 0.043569423258304596,
+        "normalized_mse": 0.0069376504980027676,
+        "one_step_force_residual": 2.355037212371826,
+        "one_step_hessian_residual": 3.659087657928467,
+        "sampling": {
+          "5": {
+            "mmd_biased": 0.05973935127258301,
+            "empirical_w2": 0.16001750509477336,
+            "endpoint_energy": 0.47853878140449524,
+            "endpoint_force_rms": 3.8830432891845703,
+            "endpoint_hessian_to_target_rms": 7.620239734649658
+          },
+          "20": {
+            "mmd_biased": 0.0133819580078125,
+            "empirical_w2": 0.11045081144756136,
+            "endpoint_energy": 0.4247719347476959,
+            "endpoint_force_rms": 3.972843885421753,
+            "endpoint_hessian_to_target_rms": 7.530511379241943
+          },
+          "100": {
+            "mmd_biased": 0.008698344230651855,
+            "empirical_w2": 0.10547161523713522,
+            "endpoint_energy": 0.42628058791160583,
+            "endpoint_force_rms": 4.020007610321045,
+            "endpoint_hessian_to_target_rms": 7.634510517120361
+          }
+        }
+      },
+      {
+        "method": "force",
+        "validation_mse": 0.042320385575294495,
+        "normalized_mse": 0.006738763768225908,
+        "one_step_force_residual": 2.2347443103790283,
+        "one_step_hessian_residual": 3.484492063522339,
+        "sampling": {
+          "5": {
+            "mmd_biased": 0.06822872161865234,
+            "empirical_w2": 0.1555004916451078,
+            "endpoint_energy": 0.4446141719818115,
+            "endpoint_force_rms": 3.6954901218414307,
+            "endpoint_hessian_to_target_rms": 6.4690680503845215
+          },
+          "20": {
+            "mmd_biased": 0.01584780216217041,
+            "empirical_w2": 0.10458475393118755,
+            "endpoint_energy": 0.3789350390434265,
+            "endpoint_force_rms": 3.740821361541748,
+            "endpoint_hessian_to_target_rms": 6.2019124031066895
+          },
+          "100": {
+            "mmd_biased": 0.009653568267822266,
+            "empirical_w2": 0.0996726049823362,
+            "endpoint_energy": 0.3775971531867981,
+            "endpoint_force_rms": 3.7810089588165283,
+            "endpoint_hessian_to_target_rms": 6.288682460784912
+          }
+        }
+      },
+      {
+        "method": "hessian",
+        "validation_mse": 0.04255323112010956,
+        "normalized_mse": 0.006775840185582638,
+        "one_step_force_residual": 2.2525033950805664,
+        "one_step_hessian_residual": 3.4673187732696533,
+        "sampling": {
+          "5": {
+            "mmd_biased": 0.0604783296585083,
+            "empirical_w2": 0.14931369458189492,
+            "endpoint_energy": 0.43281829357147217,
+            "endpoint_force_rms": 3.729429006576538,
+            "endpoint_hessian_to_target_rms": 6.852296829223633
+          },
+          "20": {
+            "mmd_biased": 0.012345314025878906,
+            "empirical_w2": 0.08929828372445495,
+            "endpoint_energy": 0.38026443123817444,
+            "endpoint_force_rms": 3.813321590423584,
+            "endpoint_hessian_to_target_rms": 6.774944305419922
+          },
+          "100": {
+            "mmd_biased": 0.007341265678405762,
+            "empirical_w2": 0.08186985019275546,
+            "endpoint_energy": 0.38243597745895386,
+            "endpoint_force_rms": 3.8610029220581055,
+            "endpoint_hessian_to_target_rms": 6.894318580627441
+          }
+        }
+      }
+    ]
+  },
+  {
+    "seed": 2,
+    "config": {
+      "path": "straight FM only",
+      "endpoint_estimator": "x_t + (1-t) v_theta",
+      "surrogate": "frozen analytic anisotropic target-well energy/force/Hessian",
+      "time_power": 2,
+      "lambda_force": 0.8,
+      "lambda_hessian": 1.5,
+      "train_pairs": 192,
+      "validation_pairs": 96,
+      "mlp": "3-32-32-2 SiLU, 350 full-batch updates",
+      "device": "cuda"
+    },
+    "results": [
+      {
+        "method": "fm",
+        "validation_mse": 0.04229578375816345,
+        "normalized_mse": 0.006840034853667021,
+        "one_step_force_residual": 2.1789369583129883,
+        "one_step_hessian_residual": 3.155681848526001,
+        "sampling": {
+          "5": {
+            "mmd_biased": 0.02623772621154785,
+            "empirical_w2": 0.10414790473734048,
+            "endpoint_energy": 0.3255664110183716,
+            "endpoint_force_rms": 3.1587471961975098,
+            "endpoint_hessian_to_target_rms": 5.143101215362549
+          },
+          "20": {
+            "mmd_biased": 0.004314064979553223,
+            "empirical_w2": 0.0816546988166671,
+            "endpoint_energy": 0.31056854128837585,
+            "endpoint_force_rms": 3.2968921661376953,
+            "endpoint_hessian_to_target_rms": 5.162731170654297
+          },
+          "100": {
+            "mmd_biased": 0.006738543510437012,
+            "empirical_w2": 0.09059466242785492,
+            "endpoint_energy": 0.3238183856010437,
+            "endpoint_force_rms": 3.36767315864563,
+            "endpoint_hessian_to_target_rms": 5.348006248474121
+          }
+        }
+      },
+      {
+        "method": "force",
+        "validation_mse": 0.04241229221224785,
+        "normalized_mse": 0.0068588764406740665,
+        "one_step_force_residual": 2.196470260620117,
+        "one_step_hessian_residual": 3.1974775791168213,
+        "sampling": {
+          "5": {
+            "mmd_biased": 0.036725521087646484,
+            "empirical_w2": 0.12328513983621316,
+            "endpoint_energy": 0.32613393664360046,
+            "endpoint_force_rms": 3.0631697177886963,
+            "endpoint_hessian_to_target_rms": 5.276388168334961
+          },
+          "20": {
+            "mmd_biased": 0.004124045372009277,
+            "empirical_w2": 0.07950161233384122,
+            "endpoint_energy": 0.2879575192928314,
+            "endpoint_force_rms": 3.1588408946990967,
+            "endpoint_hessian_to_target_rms": 4.993498802185059
+          },
+          "100": {
+            "mmd_biased": 0.003960728645324707,
+            "empirical_w2": 0.08166860265459991,
+            "endpoint_energy": 0.29584136605262756,
+            "endpoint_force_rms": 3.229388475418091,
+            "endpoint_hessian_to_target_rms": 5.082919120788574
+          }
+        }
+      },
+      {
+        "method": "hessian",
+        "validation_mse": 0.042277105152606964,
+        "normalized_mse": 0.0068370141088962555,
+        "one_step_force_residual": 2.172654867172241,
+        "one_step_hessian_residual": 3.1543591022491455,
+        "sampling": {
+          "5": {
+            "mmd_biased": 0.04546523094177246,
+            "empirical_w2": 0.13642691875193041,
+            "endpoint_energy": 0.3601030707359314,
+            "endpoint_force_rms": 3.2394728660583496,
+            "endpoint_hessian_to_target_rms": 5.571190357208252
+          },
+          "20": {
+            "mmd_biased": 0.007016181945800781,
+            "empirical_w2": 0.08755014397441267,
+            "endpoint_energy": 0.3228786885738373,
+            "endpoint_force_rms": 3.323845863342285,
+            "endpoint_hessian_to_target_rms": 5.349206924438477
+          },
+          "100": {
+            "mmd_biased": 0.00507664680480957,
+            "empirical_w2": 0.08633145045710366,
+            "endpoint_energy": 0.33008819818496704,
+            "endpoint_force_rms": 3.3796546459198,
+            "endpoint_hessian_to_target_rms": 5.462316036224365
+          }
+        }
+      }
+    ]
+  }
+]
