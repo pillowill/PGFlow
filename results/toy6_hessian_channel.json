@@ -1,0 +1,284 @@
+[
+  {
+    "seed": 0,
+    "config": {
+      "state": "2D migration plus cooperative relaxation",
+      "segments": 16,
+      "alpha": 0.18,
+      "hessian_scale": 100.0,
+      "energy": "harmonic transverse channel plus off-centre Gaussian exclusion core",
+      "train_pairs": 128,
+      "validation_pairs": 64,
+      "mlp": "3-32-32-2 SiLU, 600 full-batch updates",
+      "source_target": "independent narrow left/right basin samples",
+      "device": "cuda"
+    },
+    "path_precompute_seconds": 14.339250599994557,
+    "results": [
+      {
+        "method": "straight",
+        "validation_mse": 0.03721664845943451,
+        "normalized_mse": 0.006031419616192579,
+        "path_metrics": {
+          "peak_energy": 4.415034770965576,
+          "integrated_energy": 1.3102730512619019,
+          "core_entry_fraction": 0.265625,
+          "path_length": 3.5072946548461914,
+          "discrete_curvature": 1.0183146135404973e-14
+        },
+        "sampling": {
+          "5": {
+            "mmd_biased": 0.016758322715759277,
+            "empirical_w2": 0.09976161434800974,
+            "trajectory_peak_energy": 3.7317512035369873,
+            "trajectory_integrated_energy": 1.312712550163269,
+            "trajectory_core_entry_fraction": 0.17874999344348907,
+            "endpoint_energy": 0.003345463192090392
+          },
+          "20": {
+            "mmd_biased": 0.001495361328125,
+            "empirical_w2": 0.059091007749407946,
+            "trajectory_peak_energy": 4.402980327606201,
+            "trajectory_integrated_energy": 1.3369054794311523,
+            "trajectory_core_entry_fraction": 0.3024999797344208,
+            "endpoint_energy": 0.004172989167273045
+          },
+          "100": {
+            "mmd_biased": 0.0012646913528442383,
+            "empirical_w2": 0.055424779833739266,
+            "trajectory_peak_energy": 4.4328837394714355,
+            "trajectory_integrated_energy": 1.3433709144592285,
+            "trajectory_core_entry_fraction": 0.3149999976158142,
+            "endpoint_energy": 0.004453144967556
+          }
+        }
+      },
+      {
+        "method": "hessian",
+        "validation_mse": 0.06435850262641907,
+        "normalized_mse": 0.00996304489672184,
+        "path_metrics": {
+          "peak_energy": 0.47010284662246704,
+          "integrated_energy": 0.20229974389076233,
+          "core_entry_fraction": 0.0,
+          "path_length": 3.587508201599121,
+          "discrete_curvature": 0.0001521770318504423
+        },
+        "sampling": {
+          "5": {
+            "mmd_biased": 0.06776285171508789,
+            "empirical_w2": 0.15941863390928235,
+            "trajectory_peak_energy": 0.5748779773712158,
+            "trajectory_integrated_energy": 0.22129875421524048,
+            "trajectory_core_entry_fraction": 0.0,
+            "endpoint_energy": 0.004533946048468351
+          },
+          "20": {
+            "mmd_biased": 0.004466056823730469,
+            "empirical_w2": 0.06562400769887297,
+            "trajectory_peak_energy": 0.7333004474639893,
+            "trajectory_integrated_energy": 0.278014600276947,
+            "trajectory_core_entry_fraction": 0.0012499999720603228,
+            "endpoint_energy": 0.0034198749344795942
+          },
+          "100": {
+            "mmd_biased": 0.0026540756225585938,
+            "empirical_w2": 0.06140001349421103,
+            "trajectory_peak_energy": 0.7902849316596985,
+            "trajectory_integrated_energy": 0.2997397780418396,
+            "trajectory_core_entry_fraction": 0.0024999999441206455,
+            "endpoint_energy": 0.003747707000002265
+          }
+        }
+      }
+    ]
+  },
+  {
+    "seed": 1,
+    "config": {
+      "state": "2D migration plus cooperative relaxation",
+      "segments": 16,
+      "alpha": 0.18,
+      "hessian_scale": 100.0,
+      "energy": "harmonic transverse channel plus off-centre Gaussian exclusion core",
+      "train_pairs": 128,
+      "validation_pairs": 64,
+      "mlp": "3-32-32-2 SiLU, 600 full-batch updates",
+      "source_target": "independent narrow left/right basin samples",
+      "device": "cuda"
+    },
+    "path_precompute_seconds": 2.333823199995095,
+    "results": [
+      {
+        "method": "straight",
+        "validation_mse": 0.05394064635038376,
+        "normalized_mse": 0.008977212011814117,
+        "path_metrics": {
+          "peak_energy": 4.289013385772705,
+          "integrated_energy": 1.3039644956588745,
+          "core_entry_fraction": 0.265625,
+          "path_length": 3.458615779876709,
+          "discrete_curvature": 1.0841851471232646e-14
+        },
+        "sampling": {
+          "5": {
+            "mmd_biased": 0.06633973121643066,
+            "empirical_w2": 0.15368541034588823,
+            "trajectory_peak_energy": 3.6160736083984375,
+            "trajectory_integrated_energy": 1.2472620010375977,
+            "trajectory_core_entry_fraction": 0.19249999523162842,
+            "endpoint_energy": 0.003262510523200035
+          },
+          "20": {
+            "mmd_biased": 0.007483363151550293,
+            "empirical_w2": 0.07394565926416516,
+            "trajectory_peak_energy": 4.210633277893066,
+            "trajectory_integrated_energy": 1.261989712715149,
+            "trajectory_core_entry_fraction": 0.28125,
+            "endpoint_energy": 0.003875595750287175
+          },
+          "100": {
+            "mmd_biased": 0.003866910934448242,
+            "empirical_w2": 0.06806800007405182,
+            "trajectory_peak_energy": 4.216391086578369,
+            "trajectory_integrated_energy": 1.2651721239089966,
+            "trajectory_core_entry_fraction": 0.2824999988079071,
+            "endpoint_energy": 0.004115309100598097
+          }
+        }
+      },
+      {
+        "method": "hessian",
+        "validation_mse": 0.08118755370378494,
+        "normalized_mse": 0.01290563028305769,
+        "path_metrics": {
+          "peak_energy": 0.46927252411842346,
+          "integrated_energy": 0.20715859532356262,
+          "core_entry_fraction": 0.0,
+          "path_length": 3.540163993835449,
+          "discrete_curvature": 0.00016054880688898265
+        },
+        "sampling": {
+          "5": {
+            "mmd_biased": 0.09828758239746094,
+            "empirical_w2": 0.19005818550729192,
+            "trajectory_peak_energy": 0.6064237952232361,
+            "trajectory_integrated_energy": 0.2291783094406128,
+            "trajectory_core_entry_fraction": 0.0,
+            "endpoint_energy": 0.005315764807164669
+          },
+          "20": {
+            "mmd_biased": 0.0059413909912109375,
+            "empirical_w2": 0.06770360355373932,
+            "trajectory_peak_energy": 0.7878786325454712,
+            "trajectory_integrated_energy": 0.29683277010917664,
+            "trajectory_core_entry_fraction": 0.0,
+            "endpoint_energy": 0.003556982846930623
+          },
+          "100": {
+            "mmd_biased": 0.001262068748474121,
+            "empirical_w2": 0.054514025149703195,
+            "trajectory_peak_energy": 0.8571911454200745,
+            "trajectory_integrated_energy": 0.32274311780929565,
+            "trajectory_core_entry_fraction": 0.0,
+            "endpoint_energy": 0.0038140632677823305
+          }
+        }
+      }
+    ]
+  },
+  {
+    "seed": 2,
+    "config": {
+      "state": "2D migration plus cooperative relaxation",
+      "segments": 16,
+      "alpha": 0.18,
+      "hessian_scale": 100.0,
+      "energy": "harmonic transverse channel plus off-centre Gaussian exclusion core",
+      "train_pairs": 128,
+      "validation_pairs": 64,
+      "mlp": "3-32-32-2 SiLU, 600 full-batch updates",
+      "source_target": "independent narrow left/right basin samples",
+      "device": "cuda"
+    },
+    "path_precompute_seconds": 2.3246432000014465,
+    "results": [
+      {
+        "method": "straight",
+        "validation_mse": 0.04052814096212387,
+        "normalized_mse": 0.006491503678262234,
+        "path_metrics": {
+          "peak_energy": 4.4286956787109375,
+          "integrated_energy": 1.3172338008880615,
+          "core_entry_fraction": 0.296875,
+          "path_length": 3.526503562927246,
+          "discrete_curvature": 1.1182537439980746e-14
+        },
+        "sampling": {
+          "5": {
+            "mmd_biased": 0.029445171356201172,
+            "empirical_w2": 0.11797236153014683,
+            "trajectory_peak_energy": 3.4054558277130127,
+            "trajectory_integrated_energy": 1.2057732343673706,
+            "trajectory_core_entry_fraction": 0.14499999582767487,
+            "endpoint_energy": 0.003656854620203376
+          },
+          "20": {
+            "mmd_biased": 0.0018093585968017578,
+            "empirical_w2": 0.060163278296447444,
+            "trajectory_peak_energy": 4.245906352996826,
+            "trajectory_integrated_energy": 1.2942125797271729,
+            "trajectory_core_entry_fraction": 0.2750000059604645,
+            "endpoint_energy": 0.004728943109512329
+          },
+          "100": {
+            "mmd_biased": 0.0021322965621948242,
+            "empirical_w2": 0.059278663668724745,
+            "trajectory_peak_energy": 4.318846225738525,
+            "trajectory_integrated_energy": 1.315549612045288,
+            "trajectory_core_entry_fraction": 0.2849999964237213,
+            "endpoint_energy": 0.005163104273378849
+          }
+        }
+      },
+      {
+        "method": "hessian",
+        "validation_mse": 0.06482787430286407,
+        "normalized_mse": 0.009919854812324047,
+        "path_metrics": {
+          "peak_energy": 0.4686046838760376,
+          "integrated_energy": 0.2019578367471695,
+          "core_entry_fraction": 0.0,
+          "path_length": 3.607790946960449,
+          "discrete_curvature": 0.00015894381795078516
+        },
+        "sampling": {
+          "5": {
+            "mmd_biased": 0.11417698860168457,
+            "empirical_w2": 0.21772961530126347,
+            "trajectory_peak_energy": 0.4948997497558594,
+            "trajectory_integrated_energy": 0.19338567554950714,
+            "trajectory_core_entry_fraction": 0.0,
+            "endpoint_energy": 0.007138876244425774
+          },
+          "20": {
+            "mmd_biased": 0.007233738899230957,
+            "empirical_w2": 0.08169647490363359,
+            "trajectory_peak_energy": 0.6702660918235779,
+            "trajectory_integrated_energy": 0.26114895939826965,
+            "trajectory_core_entry_fraction": 0.0012499999720603228,
+            "endpoint_energy": 0.0051271794363856316
+          },
+          "100": {
+            "mmd_biased": 0.0023965835571289062,
+            "empirical_w2": 0.06868770611218737,
+            "trajectory_peak_energy": 0.739960789680481,
+            "trajectory_integrated_energy": 0.2894878685474396,
+            "trajectory_core_entry_fraction": 0.0012499999720603228,
+            "endpoint_energy": 0.005874342750757933
+          }
+        }
+      }
+    ]
+  }
+]
